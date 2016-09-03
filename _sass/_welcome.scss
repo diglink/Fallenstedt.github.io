@@ -1,0 +1,17 @@
+#aligner{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  .align-spacer {
+    width: 20px;
+  }
+  .align-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 100vw;
+    text-align: center;
+    height: 50vh;
+    }
+}
