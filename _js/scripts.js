@@ -39,10 +39,10 @@ var Welcome = (function () {
 
     if (!window.matchMedia('(max-width: 700px)').matches) {//is screen larger than 700px wide?
       $expand.animate({
-        width: '100%',
+        width: '100vw',
       },900);
       $contract.animate({
-        width: '0%',
+        width: '0vw',
         display: 'none'
       },900).delay(100).find('h1').css('display', 'none');
     } else { //screen is less than 700px wide
