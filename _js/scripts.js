@@ -35,7 +35,7 @@ var Welcome = (function () {
   var _modifyDiv = function (expand, contract){
     var $expand = $('#' + expand);
     var $contract = $('#' + contract);
-    id('aligner').style.justifyContent = 'space-between';
+    // id('aligner').style.justifyContent = 'space-between';
 
     if (!window.matchMedia('(max-width: 700px)').matches) {//is screen larger than 700px wide?
       $expand.animate({
@@ -44,7 +44,7 @@ var Welcome = (function () {
       $contract.animate({
         width: '0%',
         display: 'none'
-      },900)
+      },900).delay(100).find('h1').css('display', 'none');
     } else { //screen is less than 700px wide
       $expand.animate({
         height: '100vh',
