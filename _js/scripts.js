@@ -8,7 +8,12 @@ var Welcome = (function () {
     return document.getElementById(element);
   };
 
-
+  //add multiple types of events to an element
+  var addMultipleEvents = function(eventsArray, element, fn){
+    eventsArray.forEach(function(e){
+      id(element).addEventListener(e, fn, false);
+    });
+  }
   //which mode should we navigate to? This function creates a sidebar from the element
   var selectDiv = function(element){
     var selectedDiv;
@@ -24,45 +29,46 @@ var Welcome = (function () {
       break;
     }
 
-    return modifyDiv(selectedDiv, notSelectedDiv);
+    return _modifyDiv(selectedDiv, notSelectedDiv);
   };
 
-  var modifyDiv = function (expand, contract){
+  var _modifyDiv = function (expand, contract){
     var $expand = $('#' + expand);
     var $contract = $('#' + contract);
     id('aligner').style.justifyContent = 'space-between';
 
-    //is screen larger than 700px wide?
-    if (!window.matchMedia('(max-width: 700px)').matches) {
+    if (!window.matchMedia('(max-width: 700px)').matches) {//is screen larger than 700px wide?
       $expand.animate({
         width: '100vw',
       },900);
       $contract.animate({
         width: '0vw',
-      },900);
+      },900).find('*').animate({
+        opacity: 0
+      });
     } else { //screen is less than 700px wide
       $expand.animate({
         height: '100vh',
       },900);
       $contract.animate({
         height: '0vh',
-      },900);
+      },900).find('*').animate({
+        opacity: 0
+      });
     }
   }
 
   return {//public methods
-    id: id,
     selectDiv: selectDiv,
-    modifyDiv: modifyDiv,
+    addMultipleEvents: addMultipleEvents
+    // modifyDiv: modifyDiv,
   };
 })();
 
 
 $(document).ready(function(){
-  Welcome.id('code').addEventListener('click', function(){
-    Welcome.selectDiv('code');
-  });
-  Welcome.id('photography').addEventListener('click', function(){
-    Welcome.selectDiv('photography');
-  });
+  var myEvents = ['click', 'touchend'];
+  Welcome.addMultipleEvents(myEvents, 'code', function(){Welcome.selectDiv('code')});
+  Welcome.addMultipleEvents(myEvents, 'photography', function(){Welcome.selectDiv('photography')});
+
 });
