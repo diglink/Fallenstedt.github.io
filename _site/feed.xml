@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Fallenstedt</title>
+    <description>Junior Web Developer, photographer, and graduate of Biology. Alex combines his eye for design and photography with his web development skills to produce responsive websites with the user in mind.
+</description>
+    <link>fallenstedt.github.io/</link>
+    <atom:link href="fallenstedt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 04 Sep 2016 13:12:18 -0700</pubDate>
+    <lastBuildDate>Sun, 04 Sep 2016 13:12:18 -0700</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+  </channel>
+</rss>

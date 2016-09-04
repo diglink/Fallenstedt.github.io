@@ -1,0 +1,32 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:400,500";
+#aligner {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%; }
+  #aligner .align-spacer {
+    width: 20px; }
+  #aligner .align-item {
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(rgba(0, 163, 136, 0.45), rgba(0, 163, 136, 0.45)), url("http://placekitten.com/600/500");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 100vh; }
+  #aligner .align-item:nth-child(1) {
+    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("http://placekitten.com/200/300");
+    width: 100; }
+
+@media (max-width: 700px) {
+  #aligner {
+    flex-direction: column; }
+    #aligner .align-spacer {
+      width: 20px; }
+    #aligner .align-item {
+      height: 50vh; } }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway' !important; }
