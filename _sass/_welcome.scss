@@ -4,6 +4,15 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
+  @include mq('tablet-wide') {
+    flex-direction: column;
+    .align-spacer {
+      width: 20px;
+    }
+    .align-item{
+      height: 50vh;
+    }
+  }
   .align-spacer {
     width: 20px;
   }
@@ -35,17 +44,3 @@
     width: 100;
   }
 }
-
-
-@media (max-width: 700px) {
-    #aligner{
-      flex-direction: column;
-      .align-spacer {
-        width: 20px;
-      }
-      .align-item{
-        height: 50vh;
-      }
-    }
-
-  }

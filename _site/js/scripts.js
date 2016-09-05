@@ -8,6 +8,13 @@ var Welcome = (function () {
     return document.getElementById(element);
   };
 
+  function fadeOutBeforeUnload() {
+    window.addEventListener("beforeunload", function (event) {
+    console.log('animate-out');
+      document.body.classList.add("animate-out");
+    });
+  }
+
   //add multiple types of events to an element
   var addMultipleEvents = function(eventsArray, element, fn){
     eventsArray.forEach(function(e){
@@ -61,9 +68,10 @@ var Welcome = (function () {
   }
 
   var navigateTo = function(pathname) {
+    fadeOutBeforeUnload();
     setTimeout(function(){
       window.location.pathname = pathname
-    },2500)
+    },1800)
 
   }
 

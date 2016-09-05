@@ -8,6 +8,13 @@ var Welcome = (function () {
     return document.getElementById(element);
   };
 
+  function fadeOutBeforeUnload() {
+    window.addEventListener("beforeunload", function (event) {
+    console.log('animate-out');
+      document.body.classList.add("animate-out");
+    });
+  }
+
   //add multiple types of events to an element
   var addMultipleEvents = function(eventsArray, element, fn){
     eventsArray.forEach(function(e){
@@ -37,7 +44,7 @@ var Welcome = (function () {
     var $contract = $('#' + contract);
     // id('aligner').style.justifyContent = 'space-between';
 
-    if (!window.matchMedia('(max-width: 700px)').matches) {//is screen larger than 700px wide?
+    if (!window.matchMedia('(max-width: 768px)').matches) {//is screen larger than 700px wide?
       $expand.animate({
         width: '100vw',
       },900);
@@ -61,9 +68,10 @@ var Welcome = (function () {
   }
 
   var navigateTo = function(pathname) {
+    fadeOutBeforeUnload();
     setTimeout(function(){
       window.location.pathname = pathname
-    },2500)
+    },1800)
 
   }
 

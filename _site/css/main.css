@@ -30,3 +30,18 @@
       height: 50vh; } }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway' !important; }
+
+.animate-in {
+  -webkit-animation: fadeIn .5s ease-in;
+  animation: fadeIn .5s ease-in; }
+
+.animate-out {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
