@@ -44,7 +44,9 @@ var Welcome = (function () {
       $contract.animate({
         width: '0vw',
         display: 'none'
-      },900).delay(100).find('h1').css('display', 'none');
+      },900).delay(100).find('h1').animate({
+        opacity: 0
+      },500, navigateTo(expand))
     } else { //screen is less than 700px wide
       $expand.animate({
         height: '100vh',
@@ -52,21 +54,32 @@ var Welcome = (function () {
       $contract.animate({
         height: '0vh',
         display: 'none'
-      },900)
+      },900).find('h1').animate({
+        opacity: 0
+      },500, navigateTo(expand))
     }
   }
 
+  var navigateTo = function(pathname) {
+    setTimeout(function(){
+      window.location.pathname = pathname
+    },2500)
+
+  }
+
   return {//public methods
+    id: id,
     selectDiv: selectDiv,
     addMultipleEvents: addMultipleEvents
-    // modifyDiv: modifyDiv,
   };
 })();
 
 
 $(document).ready(function(){
-  var myEvents = ['click', 'touchend'];
-  Welcome.addMultipleEvents(myEvents, 'code', function(){Welcome.selectDiv('code')});
-  Welcome.addMultipleEvents(myEvents, 'photography', function(){Welcome.selectDiv('photography')});
+  if(Welcome.id('photography') || Welcome.id('code')){
+    var myEvents = ['click', 'touchend'];
+    Welcome.addMultipleEvents(myEvents, 'code', function(){Welcome.selectDiv('code')});
+    Welcome.addMultipleEvents(myEvents, 'photography', function(){Welcome.selectDiv('photography')});
+  }
 
 });
