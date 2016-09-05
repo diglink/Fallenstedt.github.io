@@ -1,10 +1,20 @@
 ---
+title: photography
 layout: standard
 ---
 
 <div class="">
   <h1>photos</h1>
 </div>
+
+{% assign nodes = site.pages %}
+  {% for node in nodes %}
+  {% if node.title %}
+    {{node.url}}
+    {% endif %}
+  {% endfor %}
+
+
 
 <!-- {% assign nodes = site.pages | sort: 'navorder' %}
   {% for node in nodes %}
