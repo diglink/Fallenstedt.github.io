@@ -44,7 +44,7 @@ var Welcome = (function () {
     var $contract = $('#' + contract);
     // id('aligner').style.justifyContent = 'space-between';
 
-    if (!window.matchMedia('(max-width: 700px)').matches) {//is screen larger than 700px wide?
+    if (!window.matchMedia('(max-width: 768px)').matches) {//is screen larger than 700px wide?
       $expand.animate({
         width: '100vw',
       },900);

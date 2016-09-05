@@ -5,3 +5,18 @@ layout: standard
 <div class="">
   <h1>photos</h1>
 </div>
+
+<!-- {% assign nodes = site.pages | sort: 'navorder' %}
+  {% for node in nodes %}
+    {% unless node.exclude_from_nav %}
+      {% if node.title %}
+          <li>
+          {% if page.url == node.url %}
+            <a class="page-link active" href="{{node.url}}">{{ node.title }}</a>
+          {% else %}
+            <a class="page-link" href="{{node.url}}">{{ node.title }}</a>
+          {% endif %}
+          </li>
+      {% endif %}
+    {% endunless %}
+  {% endfor %} -->
