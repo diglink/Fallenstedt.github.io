@@ -1,6 +1,7 @@
 <nav>
   <ul class="navbar">
     {% assign nodes = site.pages | sort: 'navorder' %}
+    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
     {% for node in nodes %}
     {% if node.title %}
     <li>
