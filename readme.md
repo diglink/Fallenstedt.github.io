@@ -9,9 +9,9 @@ To develop locally, you'll need:
 [Ruby](https://www.ruby-lang.org/en/downloads/)
 [Bundler](bundler.io)
 
-1. Upon Cloning, run `bundle install && jekyll s`
+1. Upon Cloning, run `bundle install && jekyll s --livereload`
 
 2.  Are you using Bundler to manage gems? Then you have to run:
-`bundle exec jekyll s`. Otherwise `jekyll s` will suffice.
+`bundle exec jekyll s --livereload`. Otherwise `jekyll s` will suffice.
 
 3. Navigate to `locahost:4000`;

@@ -1,0 +1,7 @@
+
+{% assign nodes = site.pages %}
+  {% for node in nodes %}
+  {% if node.title %}
+    {{node.title}}
+    {% endif %}
+  {% endfor %}
