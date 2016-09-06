@@ -1,0 +1,26 @@
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 200px;
+  background: $red;
+  li {
+    padding: 0.5em 0 0.5em 0;
+    font-size: $medium-font;
+    color: $white;
+    #{$a-tags} {
+      color: inherit;
+    }
+    #{$a-tags-hover} {
+      text-decoration: none !important;
+      background: $white;
+      color: $red;
+    }
+  }
+}

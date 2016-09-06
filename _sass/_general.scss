@@ -1,4 +1,20 @@
 
+
+$red: #BD4932;
+$orange: #DB9E36;
+$yellow: #FFD34E;
+$white: #FAFAFA;
+$blue: #105B63;
+
+$large-font: 2em;
+$medium-font: 1.5em;
+$standard-font: 1em; 
+
+
+html, body {
+  background: $white !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway' !important;
 }
