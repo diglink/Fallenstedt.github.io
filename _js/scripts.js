@@ -82,6 +82,15 @@ var Welcome = (function () {
   };
 })();
 
+function toggleNav() {
+    var x = document.getElementById("myTopNav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 
 $(document).ready(function(){
   if(Welcome.id('photography') || Welcome.id('code')){

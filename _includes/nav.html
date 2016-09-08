@@ -1,7 +1,6 @@
 <nav>
-  <ul class="navbar">
+  <ul class="topnav" id="myTopNav">
     {% assign nodes = site.pages | sort: 'navorder' %}
-    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
     {% for node in nodes %}
     {% if node.title %}
     <li>
@@ -13,5 +12,6 @@
     </li>
     {% endif %}
     {% endfor %}
+        <li class="icon"><a href="javascript:void(0)" onclick="toggleNav()">&#9776;</a></li>
   </ul>
 </nav>
