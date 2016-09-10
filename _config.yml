@@ -33,3 +33,6 @@ collections:
     includes_dir: _includes
   js:
     js_dir: _js
+
+gems:
+  - jekyll-livereload
