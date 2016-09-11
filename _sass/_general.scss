@@ -8,7 +8,7 @@ $blue: #105B63;
 
 $large-font: 2em;
 $medium-font: 1.5em;
-$standard-font: 1em; 
+$standard-font: 1em;
 
 
 html, body {
@@ -17,4 +17,13 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway' !important;
+}
+
+.poster {
+  border: 1px solid red;
+  height: 100vh;
+}
+
+.section {
+  border: 1px solid blue;
 }
