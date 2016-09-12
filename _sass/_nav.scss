@@ -1,3 +1,7 @@
+.active {
+  background-color: #555;
+}
+
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
   list-style-type: none;
@@ -30,6 +34,9 @@ ul.topnav li.icon {display: none;}
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
+  .active {
+    background-color: transparent;
+  }
   ul.topnav{ background-color: #333; overflow: hidden;}
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {

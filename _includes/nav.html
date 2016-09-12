@@ -5,9 +5,9 @@
     {% if node.title %}
     <li>
       {% if page.url == node.url %}
-      <a class="page-link active" href="{{node.url}}">{{ node.title }}</a>
+      <a class="active" href="{{node.url}}">{{ node.title }}</a>
       {% else %}
-      <a class="page-link" href="{{node.url}}">{{ node.title }}</a>
+      <a class="" href="{{node.url}}">{{ node.title }}</a>
       {% endif %}
     </li>
     {% endif %}
