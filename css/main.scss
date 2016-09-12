@@ -3,10 +3,13 @@
 ---
 @charset "utf-8";
 
-@import '_welcome';
+//globals
 @import '_general';
 @import '_font';
 @import '_animations';
 @import '_mixins';
 @import '_nav';
+
+//pages
 @import '_photography';
+@import '_welcome';
