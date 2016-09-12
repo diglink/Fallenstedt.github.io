@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 //welcome screen functions
-var Welcome = (function () {
+var Index = (function () {
   var isSideBarActive = false;
 
   //So I don't have to write document.getElementById everytime.
@@ -83,9 +83,9 @@ var Welcome = (function () {
 })();
 
 $(document).ready(function(){
-  if(Welcome.id('photography') || Welcome.id('code')){
+  if(Index.id('photography') || Index.id('code')){
     var myEvents = ['click', 'touchend'];
-    Welcome.addMultipleEvents(myEvents, 'code', function(){Welcome.selectDiv('code')});
-    Welcome.addMultipleEvents(myEvents, 'photography', function(){Welcome.selectDiv('photography')});
+    Index.addMultipleEvents(myEvents, 'code', function(){Index.selectDiv('code')});
+    Index.addMultipleEvents(myEvents, 'photography', function(){Index.selectDiv('photography')});
   }
 });
