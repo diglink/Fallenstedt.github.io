@@ -82,50 +82,10 @@ var Welcome = (function () {
   };
 })();
 
-//nav bar functions
-var Nav = (function(){
-  var toggle = function() {
-      var x = document.getElementById("myTopNav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-      } else {
-          x.className = "topnav";
-      }
-  }
-  return {
-    toggle: toggle
-  }
-})();
-
-//scripts to be used when a page is loaded with the 'standard' layout
-var Standard = (function(){
-  var obtainImages = function(search) {
-    $.ajax({
-      url: "../images",
-      success: function(data){
-        $(data).find("a:contains(" + search + ")").each(function(){
-          // will loop through
-          $('<p></p>').html(this).appendTo('#photographer-poster')
-        });
-      }
-    });
-  }
-
-  var backgroundImageCarousel = function() {
-
-  }
-  return {
-    obtainImages: obtainImages,
-  }
-})();
-
-
 $(document).ready(function(){
   if(Welcome.id('photography') || Welcome.id('code')){
     var myEvents = ['click', 'touchend'];
     Welcome.addMultipleEvents(myEvents, 'code', function(){Welcome.selectDiv('code')});
     Welcome.addMultipleEvents(myEvents, 'photography', function(){Welcome.selectDiv('photography')});
   }
-  Standard.obtainImages('cat');
-
 });
