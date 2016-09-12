@@ -1,6 +1,4 @@
 
-
-
 //scripts to be used when a page is loaded with the 'standard' layout
 var Photography = (function(){
 

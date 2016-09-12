@@ -16,6 +16,7 @@ ul.topnav li:nth-child(n+2){float: right;}
 
 /* Style the links inside the list items */
 ul.topnav li a {
+  margin: 10px 0 0 0;
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
@@ -37,7 +38,11 @@ ul.topnav li.icon {display: none;}
   .active {
     background-color: transparent;
   }
-  ul.topnav{ background-color: #333; overflow: hidden;}
+  ul.topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin: -10px 0 0 0;
+  }
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: right;
