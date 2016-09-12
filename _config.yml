@@ -35,5 +35,7 @@ collections:
     js_dir: _js
   images:
     images_dir: _images
+  timeline:
+    timeline_dir: _timeline
 gems:
   - jekyll-livereload
