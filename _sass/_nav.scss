@@ -16,7 +16,7 @@ ul.topnav li:nth-child(n+2){float: right;}
 
 /* Style the links inside the list items */
 ul.topnav li a {
-  margin: 10px 10px 0 0;
+  margin: 10px 10px 0 10px;//make it flush with the white border
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
