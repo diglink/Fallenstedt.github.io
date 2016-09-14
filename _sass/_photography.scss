@@ -16,10 +16,10 @@ $border: 1px solid red;
     padding: 0 100px;
     h1 {
       text-align: left;
-      font-size: 8vw;
+      font-size: 6vw;
     }
     h5 {
-      font-size: 4vw;
+      font-size: 3vw;
       line-height: 1.5em;
     }
   }
@@ -28,5 +28,12 @@ $border: 1px solid red;
 @media screen and (max-width:900px) {
   .poster div {
     padding: 0 20px;
+    h1 {
+      line-height: .5em;
+    }
+    h5 {
+      font-size: 4vw;
+        line-height: 1.2em;
+    }
   }
 }
