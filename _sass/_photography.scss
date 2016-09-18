@@ -25,6 +25,17 @@ $border: 1px solid red;
   }
 
 
+.padding {
+  padding: 0 100px;
+  .info {
+    display: flex;
+    ul {
+      width: 90%;
+    }
+  }
+}
+
+
 @media screen and (max-width:900px) {
   .poster div {
     padding: 0 20px;
