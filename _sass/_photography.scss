@@ -2,6 +2,14 @@ $border: 1px solid red;
 
 #photographer-poster {
   border: 10px solid white;
+  background:   linear-gradient(
+    rgba(0, 30, 30, 0.45),
+    rgba(0, 30, 30, 0.45)
+    ),
+    url('../images/nature/nature-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
   .poster div {
     color: white;
@@ -28,7 +36,6 @@ $border: 1px solid red;
   background-color: #f0f0f0;
   padding: 2em 0;
 }
-
 
 .padding {
   padding: 0 100px;

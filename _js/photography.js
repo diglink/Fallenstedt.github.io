@@ -2,6 +2,11 @@
 //scripts to be used when a page is loaded with the 'standard' layout
 var Photography = (function(){
 
+  var globals = {
+    imageCount: 5
+  }
+
+
   var id = function(element){
     return document.getElementById(element);
   }
@@ -10,7 +15,7 @@ var Photography = (function(){
   var obtainImages = function(search) {
     var backgroundImages = new Array();
     $.ajax({
-      url: "../images",
+      url: "../images/nature",
       success: function(data){
         $(data).find("a:contains(" + search + ")").each(function(){
           // will loop through
@@ -31,9 +36,10 @@ var Photography = (function(){
   }
 
   var backgroundImageCarousel = function(array) {
-    //take an array of image names and cycle through them for the first section on photography
-    alert(array)
-    id('photographer-poster').style.background = 'url(' + array[0] + ')';
+    //TODO take an array of image names and cycle through them for the first section on photography by calling this function once every 2 seconds and adding 1 imageCount each time. If imagecount is greater than array.length, set it to 0. Disable this function on mobile view. 
+
+      id('photographer-poster').style.backgroundImage = 'url(../images/nature/' + array[globals.imageCount] + ')';
+
   }
 
   return {
@@ -47,5 +53,9 @@ var Photography = (function(){
 
 $(document).ready(function(){
   Photography.fadeOutBeforeUnload();
-  var myBgImgs = Photography.obtainImages('cat');
+  //TODO Figure out javascript promises
+  var myBgImgs = Photography.obtainImages('nature-');
+  setTimeout(function(){
+    Photography.backgroundImageCarousel(myBgImgs)
+  },2000)
 });
