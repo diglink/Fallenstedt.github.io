@@ -23,6 +23,13 @@ $border: 1px solid red;
   }
 
 
+#photographer-industry {
+  border: $border;
+  background-color: #f0f0f0;
+  padding: 2em 0;
+}
+
+
 .padding {
   padding: 0 100px;
   .info {
@@ -44,10 +51,9 @@ $border: 1px solid red;
   }
 }
 
-
 @media screen and (max-width:900px) {
   .padding {
-    padding: 0 50px;
+    padding: 0 20px;
   }
   .poster div {
     h1 {
@@ -58,7 +64,6 @@ $border: 1px solid red;
         line-height: 1.2em;
     }
   }
-
   .info {
     flex-direction: column;
   }
