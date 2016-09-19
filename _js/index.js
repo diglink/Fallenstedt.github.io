@@ -10,7 +10,7 @@ var Index = (function () {
 
   function fadeOutBeforeUnload() {
     window.addEventListener("beforeunload", function (event) {
-    console.log('animate-out');
+      console.log('animate-out');
       document.body.classList.add("animate-out");
     });
   }
@@ -83,6 +83,7 @@ var Index = (function () {
 })();
 
 $(document).ready(function(){
+  //attach touch events
   if(Index.id('photography') || Index.id('code')){
     var myEvents = ['click', 'touchend'];
     Index.addMultipleEvents(myEvents, 'code', function(){Index.selectDiv('code')});

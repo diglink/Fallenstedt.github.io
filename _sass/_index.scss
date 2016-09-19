@@ -12,17 +12,24 @@
     color: #fff;
     background:
       linear-gradient(
-      rgba(0, 163, 136, 0.45),
-      rgba(0, 163, 136, 0.45)
+      rgba(49, 22, 21, 0.45),
+      rgba(49, 22, 21, 0.45)
       ),
-      url('http://placekitten.com/600/500');
+      url('../images/landscape/landscape-9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     text-align: center;
     height: 100vh;
+    &:hover {
+      //expand image
+      //make linear gradient darker
+    }
+
   }
   .align-item:nth-child(1){
     background:
