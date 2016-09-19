@@ -34,7 +34,7 @@ $border: 1px solid red;
     }
     ul {
       flex-basis: 40%;
-      height: 500px;
+      // max-height: 350px;
       columns: 2;
       li {
         display: flex;
