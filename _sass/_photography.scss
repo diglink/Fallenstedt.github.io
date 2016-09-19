@@ -9,11 +9,9 @@ $border: 1px solid red;
     justify-content: center;
     // align-items: center;
     flex-direction: column;
-    padding: 0 50px;
     width: 100%;
     height: 90vh;
     text-align: left;
-    padding: 0 100px;
     h1 {
       text-align: left;
       font-size: 6vw;
@@ -29,16 +27,29 @@ $border: 1px solid red;
   padding: 0 100px;
   .info {
     display: flex;
+    justify-content: space-between;
+    h4 {
+      flex-basis: 60%;
+      margin: 0 0 2em 0;
+    }
     ul {
-      width: 90%;
+      flex-basis: 40%;
+      height: 500px;
+      columns: 2;
+      li {
+        display: flex;
+        align-items: baseline;
+      }
     }
   }
 }
 
 
 @media screen and (max-width:900px) {
+  .padding {
+    padding: 0 50px;
+  }
   .poster div {
-    padding: 0 20px;
     h1 {
       line-height: .5em;
     }
@@ -46,5 +57,9 @@ $border: 1px solid red;
       font-size: 4vw;
         line-height: 1.2em;
     }
+  }
+
+  .info {
+    flex-direction: column;
   }
 }
