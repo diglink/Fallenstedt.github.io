@@ -3,7 +3,7 @@
 var Photography = (function(){
 
   var globals = {
-    imageCount: 5
+    imageCount: 0
   }
 
 
@@ -35,14 +35,13 @@ var Photography = (function(){
     });
   }
 
-  var backgroundImageCarousel = function(array) {
-    //TODO take an array of image names and cycle through them for the first section on photography by calling this function once every 2 seconds and adding 1 imageCount each time. If imagecount is greater than array.length, set it to 0. Disable this function on mobile view. 
-
-      id('photographer-poster').style.backgroundImage = 'url(../images/nature/' + array[globals.imageCount] + ')';
-
+  var backgroundImageCarousel = function(array, count) {
+    //TODO take an array of image names and cycle through them for the first section on photography by calling this function once every 2 seconds and adding 1 imageCount each time. If imagecount is greater than array.length, set it to 0. Disable this function on mobile view.
+      id('photographer-poster').style.backgroundImage = 'url(../images/nature/' + array[count] + ')';
   }
 
   return {
+    globals: globals,
     id: id,
     obtainImages: obtainImages,
     backgroundImageCarousel: backgroundImageCarousel,
@@ -53,9 +52,5 @@ var Photography = (function(){
 
 $(document).ready(function(){
   Photography.fadeOutBeforeUnload();
-  //TODO Figure out javascript promises
-  var myBgImgs = Photography.obtainImages('nature-');
-  setTimeout(function(){
-    Photography.backgroundImageCarousel(myBgImgs)
-  },2000)
+
 });
