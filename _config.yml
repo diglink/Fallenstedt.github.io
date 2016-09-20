@@ -37,5 +37,7 @@ collections:
     images_dir: _images
   timeline:
     timeline_dir: _timeline
+  portfolios:
+    portfolios_dir: _portfolios
 gems:
   - jekyll-livereload
