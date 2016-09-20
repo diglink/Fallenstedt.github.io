@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Collective Theme
 subtitle: Jekyll
 

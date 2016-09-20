@@ -56,14 +56,10 @@ custom_js:
     <div class="padding">
       <h1>Gallery</h1>
       <ul>
-        <li>gallery item</li>
-        <li>gallery item</li>
-        <li>gallery item</li>
-        <li>gallery item</li>
-        <li>gallery item</li>
-        <li>gallery item</li>
-        <li>gallery item</li>
-        <li>gallery item</li>
+        {% assign portfolios = site.portfolios %}
+        {% for portfolio in portfolios %}
+          <li>{{ portfolio.title }}</li>
+        {% endfor %}
       </ul>
     </div>
   </section>

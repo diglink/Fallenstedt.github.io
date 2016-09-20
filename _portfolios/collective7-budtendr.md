@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Budtendr
 subtitle: Angular 2
 

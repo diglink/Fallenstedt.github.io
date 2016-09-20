@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Portraits
 subtitle: Photography
 
@@ -10,7 +9,6 @@ cta:
   btnText: View Services
   btnType: btn-warning
   btnLink: /about/
-
 
 images:
 - /img/portraits/portraits-16.jpg

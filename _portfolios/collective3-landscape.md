@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Landscape
 subtitle: Photography
 
@@ -34,4 +33,4 @@ images:
 
 ---
 
-Landscape Photography was what originally brought me into photography. I loved getting out in nature and waiting in quietness and stillness of waiting for a perfect moment. 
+Landscape Photography was what originally brought me into photography. I loved getting out in nature and waiting in quietness and stillness of waiting for a perfect moment.

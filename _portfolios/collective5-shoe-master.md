@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Shoe Master
 subtitle: PHP
 

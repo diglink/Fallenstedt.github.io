@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Commercial
 subtitle: Photography
 

@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Ember Q
 subtitle: Ember2
 

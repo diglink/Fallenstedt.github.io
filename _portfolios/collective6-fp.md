@@ -1,5 +1,4 @@
 ---
-layout: "collective-piece"
 title: Fallenstedt Photography
 subtitle: PHP
 
