@@ -11,6 +11,12 @@
 
   function toggle() {
     var x = document.getElementById("myTopNav");
+
+    // index page has no navbar. 
+    if (!x){
+      return;
+    }
+
     var li = document.getElementById("hamburger");
 
     li.addEventListener("click", function(){

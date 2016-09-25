@@ -27,13 +27,6 @@ var Photography = (function(){
     return backgroundImages;
   }
 
-  //Before DOM is unloaded, apply a class called "animate-out".
-  var fadeOutBeforeUnload = function() {
-    window.addEventListener("beforeunload", function (event) {
-    console.log('animate-out');
-      document.body.classList.add("animate-out");
-    });
-  }
 
   var backgroundImageCarousel = function(array, count) {
     //TODO take an array of image names and cycle through them for the first section on photography by calling this function once every 2 seconds and adding 1 imageCount each time. If imagecount is greater than array.length, set it to 0. Disable this function on mobile view.
@@ -45,12 +38,11 @@ var Photography = (function(){
     id: id,
     obtainImages: obtainImages,
     backgroundImageCarousel: backgroundImageCarousel,
-    fadeOutBeforeUnload: fadeOutBeforeUnload,
+    // fadeOutBeforeUnload: fadeOutBeforeUnload,
   }
 })();
 
 
 $(document).ready(function(){
-  Photography.fadeOutBeforeUnload();
 
 });
