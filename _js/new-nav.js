@@ -1,22 +1,24 @@
-var Nav = (function(){
-  var toggle = function() {
-    var x = document.getElementById("myTopNav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+
+(function($, App){
+
+  //Private
+  var _nav = {};
+
+  //logic
+  function test() {
+    console.log('test success');
+  }
+
+  //Public
+  App.Nav = {
+    init: function(){
+      _nav.test = test();
     }
   }
-  return {
-    toggle: toggle,
-  }
-})();
 
-//
-// (function($, App){
-//
-// })(jQuery, window.App = window.App || {});
-//
+
+})(jQuery, window.App = window.App || {});
+
 //
 // (function($, MapApp) {
 // 'use strict';
