@@ -6,6 +6,7 @@
     init: function(){
       App.Index.init();
       App.Nav.init();
+      App.Photography.init();
       App.Helpers.fadeOutBeforeUnload();
     }
   }

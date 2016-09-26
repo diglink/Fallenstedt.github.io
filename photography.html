@@ -3,8 +3,6 @@ navorder: 2
 title: Photography
 layout: standard
 custom_css:
-custom_js:
-  - photography
 ---
 <head>
   {% include head.html %}
@@ -14,11 +12,7 @@ custom_js:
       <link rel="stylesheet" href="/css/{{ stylesheet }}" media="screen" type="text/css">
     {% endfor %}
   {% endif %}
-  {% if page.custom_js %}
-    {% for js_file in page.custom_js %}
-      <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
-    {% endfor %}
-  {% endif %}
+
 </head>
 <header>
   {% include nav.html %}

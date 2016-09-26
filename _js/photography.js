@@ -12,14 +12,14 @@
 
   //logic
   function backgroundImageCarousel() {
-    console.log(IMAGESS);
+    console.log(IMAGES);
   }
 
 
   //Public
-  App.Nav = {
+  App.Photography = {
     init: function(){
-
+      _photo.backgroundImageCarousel = backgroundImageCarousel();
     }
   }
 
