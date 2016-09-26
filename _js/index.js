@@ -1,97 +1,3 @@
-// /*jshint esversion: 6 */
-// //welcome screen functions
-// var Index = (function () {
-//   var isSideBarActive = false;
-//
-//   //So I don't have to write document.getElementById everytime.
-//   var id = function(element) {
-//     return document.getElementById(element);
-//   };
-//
-//   // function fadeOutBeforeUnload() {
-//   //   window.addEventListener("beforeunload", function (event) {
-//   //     console.log('animate-out');
-//   //     document.body.classList.add("animate-out");
-//   //   });
-//   // }
-//
-//   //add multiple types of events to an element
-//   var addMultipleEvents = function(eventsArray, element, fn){
-//     eventsArray.forEach(function(e){
-//       id(element).addEventListener(e, fn, false);
-//     });
-//   }
-//   //which mode should we navigate to? This function creates a sidebar from the element
-//   var selectDiv = function(element){
-//     var selectedDiv;
-//     var notSelectedDiv;
-//     switch(element){
-//       case 'photography':
-//       selectedDiv = 'photography';
-//       notSelectedDiv = 'code';
-//       break;
-//       case 'code':
-//       selectedDiv = 'code';
-//       notSelectedDiv = 'photography';
-//       break;
-//     }
-//
-//     return _modifyDiv(selectedDiv, notSelectedDiv);
-//   };
-//
-//   var _modifyDiv = function (expand, contract){
-//     var $expand = $('#' + expand);
-//     var $contract = $('#' + contract);
-//     // id('aligner').style.justifyContent = 'space-between';
-//
-//     if (!window.matchMedia('(max-width: 1200px)').matches) {//is screen larger than 700px wide?
-//       $expand.animate({
-//         width: '100vw',
-//       },900);
-//       $contract.animate({
-//         width: '0vw',
-//         display: 'none'
-//       },900).delay(100).find('h1').animate({
-//         opacity: 0
-//       },500, navigateTo(expand))
-//     } else { //screen is less than 700px wide
-//       $expand.animate({
-//         height: '100vh',
-//       },900);
-//       $contract.animate({
-//         height: '0vh',
-//         display: 'none'
-//       },900).find('h1').animate({
-//         opacity: 0
-//       },500, navigateTo(expand))
-//     }
-//   }
-//
-//   var navigateTo = function(pathname) {
-//     fadeOutBeforeUnload();
-//     setTimeout(function(){
-//       window.location.pathname = pathname
-//     },1800)
-//
-//   }
-//
-//   return {//public methods
-//     id: id,
-//     selectDiv: selectDiv,
-//     addMultipleEvents: addMultipleEvents
-//   };
-// })();
-//
-// $(document).ready(function(){
-//   //attach touch events
-  // if(Index.id('photography') || Index.id('code')){
-  //   var myEvents = ['click', 'touchend'];
-  //   Index.addMultipleEvents(myEvents, 'code', function(){Index.selectDiv('code')});
-  //   Index.addMultipleEvents(myEvents, 'photography', function(){Index.selectDiv('photography')});
-  // }
-// });
-
-
 (function($, App){
 
   //Private
@@ -99,70 +5,69 @@
   var _index = {};
 
   // logic
-  function addMultipleEvents(eventsArray, element, fn){
-    return eventsArray.forEach(function(e){
-      App.Helpers.id(element).addEventListener(e, fn, false);
-    });
-  }
-  function selectedDiv(element){
-    var selectedDiv;
-    var notSelectedDiv;
-    switch(element){
-      case 'photography':
-      selectedDiv = 'photography';
-      notSelectedDiv = 'code';
-      break;
-      case 'code':
-      selectedDiv = 'code';
-      notSelectedDiv = 'photography';
-      break;
+  function openSesame() {
+    if (App.Helpers.id('photography') || App.Helpers.id('code')){
+      App.Helpers.addMultipleEvents(EVENTS_ARR, 'code',
+      function(){selectedDiv('code')});
+      App.Helpers.addMultipleEvents(EVENTS_ARR, 'photography',
+      function(){selectedDiv('photography')});
     }
+    function selectedDiv(element){
+      var selectedDiv;
+      var notSelectedDiv;
+      switch(element){
+        case 'photography':
+        selectedDiv = 'photography';
+        notSelectedDiv = 'code';
+        break;
+        case 'code':
+        selectedDiv = 'code';
+        notSelectedDiv = 'photography';
+        break;
+      }
 
-    return modifyDiv(selectedDiv, notSelectedDiv);
-  };
+      return modifyDiv(selectedDiv, notSelectedDiv);
+    };
 
-  var modifyDiv = function (expand, contract){
-    var $expand = $('#' + expand);
-    var $contract = $('#' + contract);
-    // id('aligner').style.justifyContent = 'space-between';
+    function modifyDiv(expand, contract){
+      var $expand = $('#' + expand);
+      var $contract = $('#' + contract);
+      // id('aligner').style.justifyContent = 'space-between';
 
-    if (!window.matchMedia('(max-width: 1200px)').matches) {//is screen larger than 700px wide?
-      $expand.animate({
-        width: '100vw',
-      },900);
-      $contract.animate({
-        width: '0vw',
-        display: 'none'
-      },900).delay(100).find('h1').animate({
-        opacity: 0
-      },500, navigateTo(expand))
-    } else { //screen is less than 700px wide
-      $expand.animate({
-        height: '100vh',
-      },900);
-      $contract.animate({
-        height: '0vh',
-        display: 'none'
-      },900).find('h1').animate({
-        opacity: 0
-      },500, navigateTo(expand))
+      if (!window.matchMedia('(max-width: 1200px)').matches) {//is screen larger than 700px wide?
+        $expand.animate({
+          width: '100vw',
+        },900);
+        $contract.animate({
+          width: '0vw',
+          display: 'none'
+        },900).delay(100).find('h1').animate({
+          opacity: 0
+        },500, navigateTo(expand))
+      } else { //screen is less than 700px wide
+        $expand.animate({
+          height: '100vh',
+        },900);
+        $contract.animate({
+          height: '0vh',
+          display: 'none'
+        },900).find('h1').animate({
+          opacity: 0
+        },500, navigateTo(expand))
+      }
+    }
+    function navigateTo(pathname) {
+      setTimeout(function(){
+        window.location.pathname = pathname
+      },1800)
     }
   }
-  function navigateTo(pathname) {
-    setTimeout(function(){
-      window.location.pathname = pathname
-    },1800)
-  }
+
 
   //Public
   App.Index = {
     init: function(){
-      // if(App.Helpers.id('photography') || App.Helpers.id('code')){
-      //   var myEvents = ['click', 'touchend'];
-      //   Index.addMultipleEvents(myEvents, 'code', function(){Index.selectDiv('code')});
-      //   Index.addMultipleEvents(myEvents, 'photography', function(){Index.selectDiv('photography')});
-      // }
-
+      _index.openSesame = openSesame();
     }
   }
 
