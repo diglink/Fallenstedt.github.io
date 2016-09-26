@@ -13,11 +13,16 @@
         console.log('animate-out');
         document.body.classList.add("animate-out");
       });
-    }, 
+    },
     addMultipleEvents: function addMultipleEvents(eventsArray, element, fn){
       return eventsArray.forEach(function(e){
         App.Helpers.id(element).addEventListener(e, fn, false);
       });
+    },
+    isNull: function isNull(element){
+      if(element === null) {
+        return false;
+      }
     }
   }
 

@@ -4,8 +4,8 @@
   //Public
   App.State = {
     init: function(){
-      App.Nav.init();
       App.Index.init();
+      App.Nav.init();
       App.Helpers.fadeOutBeforeUnload();
     }
   }

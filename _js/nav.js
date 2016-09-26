@@ -5,19 +5,13 @@
   var _nav = {};
 
   //logic
-  function test() {
-    console.log('test success');
-  }
-
   function toggle() {
     var x = document.getElementById("myTopNav");
+    var li = document.getElementById("hamburger");
 
-    // index page has no navbar. 
-    if (!x){
+    if (App.Helpers.isNull(x) === false) {
       return;
     }
-
-    var li = document.getElementById("hamburger");
 
     li.addEventListener("click", function(){
       if (x.className === "topnav") {
@@ -31,7 +25,6 @@
   //Public
   App.Nav = {
     init: function(){
-      _nav.test = test();
       _nav.toggle = toggle();
     }
   }
