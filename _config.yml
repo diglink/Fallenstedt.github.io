@@ -39,5 +39,7 @@ collections:
     timeline_dir: _timeline
   portfolios:
     portfolios_dir: _portfolios
+    output: true
+    permalink: /:collection/:title/
 gems:
   - jekyll-livereload

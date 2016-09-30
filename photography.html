@@ -25,7 +25,7 @@ custom_css:
       <h5>As a photographer, I know that the perfect photo should tell a story and preserve a memory. I work with my clients and bridge the divide ideas and reality. In short, I create powerful and memorable photos.</h5>
     </div>
   </section>
-  <section id="photographer-industry">
+  <!-- <section id="photographer-industry">
       <div class='padding'>
         <h1>Clients</h1>
         <div class="info">
@@ -43,14 +43,16 @@ custom_css:
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section id="photographer-gallery">
     <div class="padding">
       <h1>Gallery</h1>
       <ul>
         {% assign portfolios = site.portfolios %}
         {% for portfolio in portfolios %}
+        <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
           <li>{{ portfolio.title }}</li>
+        </a>
         {% endfor %}
       </ul>
     </div>
