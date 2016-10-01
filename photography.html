@@ -47,13 +47,18 @@ custom_css:
   <section id="photographer-gallery">
     <div class="padding">
       <h1>Gallery</h1>
-      <ul>
-        {% assign portfolios = site.portfolios %}
-        {% for portfolio in portfolios %}
-        <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
-          <li>{{ portfolio.title }}</li>
-        </a>
-        {% endfor %}
+      <!-- <img src="/images/commercial/commercial-" alt="" /> -->
+      <ul class="list-unstyled portfolio">
+          {% assign portfolios = site.portfolios %}
+          {% for portfolio in portfolios %}
+          <div class="portfolio-item">
+            <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
+              <li style="background-image: url({{portfolio.images[0]}})">
+                {{ portfolio.title }}
+              </li>
+            </a>
+          </div>
+          {% endfor %}
       </ul>
     </div>
   </section>
