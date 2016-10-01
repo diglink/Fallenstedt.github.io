@@ -13,33 +13,33 @@ cta:
 
 
 images:
-- /img/weddings/weddings -16.jpg
-- /img/weddings/weddings -1.jpg
-- /img/weddings/weddings -2.jpg
-- /img/weddings/weddings -3.jpg
-- /img/weddings/weddings -4.jpg
-- /img/weddings/weddings -5.jpg
-- /img/weddings/weddings -6.jpg
-- /img/weddings/weddings -8.jpg
-- /img/weddings/weddings -9.jpg
-- /img/weddings/weddings -11.jpg
-- /img/weddings/weddings -13.jpg
-- /img/weddings/weddings -14.jpg
-- /img/weddings/weddings -17.jpg
-- /img/weddings/weddings -19.jpg
-- /img/weddings/weddings -21.jpg
-- /img/weddings/weddings -22.jpg
-- /img/weddings/weddings -24.jpg
-- /img/weddings/weddings -25.jpg
-- /img/weddings/weddings -28.jpg
-- /img/weddings/weddings -29.jpg
-- /img/weddings/weddings -30.jpg
-- /img/weddings/weddings -32.jpg
-- /img/weddings/weddings -35.jpg
-- /img/weddings/weddings -36.jpg
-- /img/weddings/weddings -37.jpg
-- /img/weddings/weddings -38.jpg
-- /img/weddings/weddings -39.jpg
+- /images/weddings/weddings-1.jpg
+- /images/weddings/weddings -16.jpg
+- /images/weddings/weddings -2.jpg
+- /images/weddings/weddings -3.jpg
+- /images/weddings/weddings -4.jpg
+- /images/weddings/weddings -5.jpg
+- /images/weddings/weddings -6.jpg
+- /images/weddings/weddings -8.jpg
+- /images/weddings/weddings -9.jpg
+- /images/weddings/weddings -11.jpg
+- /images/weddings/weddings -13.jpg
+- /images/weddings/weddings -14.jpg
+- /images/weddings/weddings -17.jpg
+- /images/weddings/weddings -19.jpg
+- /images/weddings/weddings -21.jpg
+- /images/weddings/weddings -22.jpg
+- /images/weddings/weddings -24.jpg
+- /images/weddings/weddings -25.jpg
+- /images/weddings/weddings -28.jpg
+- /images/weddings/weddings -29.jpg
+- /images/weddings/weddings -30.jpg
+- /images/weddings/weddings -32.jpg
+- /images/weddings/weddings -35.jpg
+- /images/weddings/weddings -36.jpg
+- /images/weddings/weddings -37.jpg
+- /images/weddings/weddings -38.jpg
+- /images/weddings/weddings -39.jpg
 
 
 

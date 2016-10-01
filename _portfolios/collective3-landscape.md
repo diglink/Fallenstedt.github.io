@@ -12,24 +12,24 @@ cta:
 
 
 images:
-- /img/landscape/landscape-8.jpg
-- /img/landscape/landscape-4.jpg
-- /img/landscape/landscape-1.jpg
-- /img/landscape/landscape-2.jpg
-- /img/landscape/landscape-3.jpg
-- /img/landscape/landscape-5.jpg
-- /img/landscape/landscape-6.jpg
-- /img/landscape/landscape-7.jpg
-- /img/landscape/landscape-9.jpg
-- /img/landscape/landscape-10.jpg
-- /img/landscape/landscape-11.jpg
-- /img/landscape/landscape-12.jpg
-- /img/landscape/landscape-13.jpg
-- /img/landscape/landscape-14.jpg
-- /img/landscape/landscape-15.jpg
-- /img/landscape/landscape-16.jpg
-- /img/landscape/landscape-17.jpg
-- /img/landscape/landscape-18.jpg
+- /images/landscape/landscape-8.jpg
+- /images/landscape/landscape-4.jpg
+- /images/landscape/landscape-1.jpg
+- /images/landscape/landscape-2.jpg
+- /images/landscape/landscape-3.jpg
+- /images/landscape/landscape-5.jpg
+- /images/landscape/landscape-6.jpg
+- /images/landscape/landscape-7.jpg
+- /images/landscape/landscape-9.jpg
+- /images/landscape/landscape-10.jpg
+- /images/landscape/landscape-11.jpg
+- /images/landscape/landscape-12.jpg
+- /images/landscape/landscape-13.jpg
+- /images/landscape/landscape-14.jpg
+- /images/landscape/landscape-15.jpg
+- /images/landscape/landscape-16.jpg
+- /images/landscape/landscape-17.jpg
+- /images/landscape/landscape-18.jpg
 
 ---
 

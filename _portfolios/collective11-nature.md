@@ -12,19 +12,19 @@ cta:
 
 
 images:
-- /img/nature/nature-3.jpg
-- /img/nature/nature-5.jpg
-- /img/nature/nature-1.jpg
-- /img/nature/nature-2.jpg
-- /img/nature/nature-4.jpg
-- /img/nature/nature-6.jpg
-- /img/nature/nature-7.jpg
-- /img/nature/nature-8.jpg
-- /img/nature/nature-10.jpg
-- /img/nature/nature-11.jpg
-- /img/nature/nature-12.jpg
-- /img/nature/nature-13.jpg
-- /img/nature/nature-14.jpg
+- /images/nature/nature-3.jpg
+- /images/nature/nature-5.jpg
+- /images/nature/nature-1.jpg
+- /images/nature/nature-2.jpg
+- /images/nature/nature-4.jpg
+- /images/nature/nature-6.jpg
+- /images/nature/nature-7.jpg
+- /images/nature/nature-8.jpg
+- /images/nature/nature-10.jpg
+- /images/nature/nature-11.jpg
+- /images/nature/nature-12.jpg
+- /images/nature/nature-13.jpg
+- /images/nature/nature-14.jpg
 
 ---
 
