@@ -1,7 +1,5 @@
-$border: 1px solid red;
-
 #photographer-poster {
-  border: 10px solid white;
+  border: $white-border;
   background:   linear-gradient(
     rgba(0, 30, 30, 0.45),
     rgba(0, 30, 30, 0.45)
@@ -32,10 +30,32 @@ $border: 1px solid red;
 
 
 #photographer-industry {
-  border: $border;
+  border: $white-border;
   background-color: #f0f0f0;
   padding: 2em 0;
 }
+
+#photographer-gallery {
+  background: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .portfolio-item {
+      width: 45%;
+      margin: 5px;
+      border: $white-border;
+      li {
+        height: 300px;
+        max-width: 100%;
+        background-size: auto;
+      }
+    }
+  }
+}
+
 
 .padding {
   padding: 0 100px;

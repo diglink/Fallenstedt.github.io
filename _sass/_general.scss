@@ -6,6 +6,11 @@ $yellow: #FFD34E;
 $white: #FAFAFA;
 $blue: #105B63;
 
+$border: 1px solid red;
+$white-border: 10px solid white;
+
+
+
 $large-font: 2em;
 $medium-font: 1.5em;
 $standard-font: 1em;
@@ -17,6 +22,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   // font-family: 'Raleway' !important;
+  margin: 0 0 15px 0 !important;
 }
 
 .poster {
