@@ -53,6 +53,24 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        div h3 {
+          color: $white;
+          padding: 20px;
+          background:
+            linear-gradient(
+            rgba(49, 22, 21, 0.45),
+            rgba(49, 22, 21, 0.45)
+            );
+          text-decoration: none;
+          transition: 2s;
+          &:hover {//TODO: convert this to a class and add it to this h3 when .portfolio-item hovers
+            background:
+              linear-gradient(
+              rgba(49, 22, 21, 0.9),
+              rgba(49, 22, 21, 0.9)
+              );
+          }
+        }
       }
     }
   }

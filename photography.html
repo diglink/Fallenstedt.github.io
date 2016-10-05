@@ -54,7 +54,9 @@ custom_css:
           <div class="portfolio-item">
             <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
               <li style="background-image: url({{portfolio.images[0]}})">
-                {{ portfolio.title }}
+                <div>
+                  <h3>{{ portfolio.title }}</h3>
+                </div>
               </li>
             </a>
           </div>
