@@ -45,43 +45,45 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
     .portfolio-item {
       flex-grow: 2;
-      flex-basis: 100%;
-      width: 45%;
+      width: 300px;
+      height: 300px;
       margin: 5px;
       border: $white-border;
-      li {
-        height: 300px;
-        max-width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        div h3 {
-          position: relative;
-          top: 200px;
-          color: $white;
-          padding: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      a {
+        text-decoration: none;
+        div{
           background:
-            linear-gradient(
-            rgba(49, 22, 21, 0.45),
-            rgba(49, 22, 21, 0.45)
-            );
-          text-decoration: none;
-          transition: 2s;
-          &:hover {//TODO: convert this to a class and add it to this h3 when .portfolio-item hovers
+          linear-gradient(
+          rgba(0, 0, 0, 0.20),
+          rgba(0, 0, 0, 0.20)
+          );
+          height: 100%;
+          display: block;
+          &:hover {
             background:
-              linear-gradient(
-              rgba(49, 22, 21, 0.9),
-              rgba(49, 22, 21, 0.9)
-              );
+            linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+            );
+          }
+          h3 {
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 300px;
+            color: white;
           }
         }
       }
     }
   }
 }
-
 
 .padding {
   padding: 0 100px;

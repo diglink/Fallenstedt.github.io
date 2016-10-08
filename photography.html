@@ -51,15 +51,13 @@ custom_css:
       <ul class="list-unstyled portfolio">
           {% assign portfolios = site.portfolios %}
           {% for portfolio in portfolios %}
-          <div class="portfolio-item">
+          <li class="portfolio-item" style="background-image: url({{portfolio.images[0]}})">
             <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
-              <li style="background-image: url({{portfolio.images[0]}})">
                 <div>
                   <h3>{{ portfolio.title }}</h3>
                 </div>
-              </li>
             </a>
-          </div>
+          </li>
           {% endfor %}
       </ul>
     </div>
