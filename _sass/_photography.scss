@@ -179,4 +179,9 @@
   .info {
     flex-direction: column;
   }
+  .cta {
+    .cta-button {
+      width: 40vw !important;
+    }
+  }
 }
