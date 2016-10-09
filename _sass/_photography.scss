@@ -85,6 +85,49 @@
   }
 }
 
+#call-to-action {
+  background-color: $blue;
+  .cta{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    .cta-button{
+      display: block;
+      border: 2px solid $orange;
+      height: 50px;
+      width: 200px;
+      text-align: center;
+      line-height: 45px;
+      text-decoration: none;
+      color: $orange;
+      transition: all 0.5s;
+      span {
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      span:after {
+        position: relative;
+        right: -10px;
+        content: '»';
+        font-size: 1.5em;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      &:hover span {
+        padding-right: 5px;
+      }
+      &:hover span:after{
+        opacity: 1;
+        right: 0
+      }
+    }
+  }
+}
+
+
 .padding {
   padding: 0 100px;
   .info {
