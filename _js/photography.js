@@ -18,7 +18,7 @@
   //Public
   App.Photography = {
     init: function(){
-
+      App.Helpers.showMe();
     }
   }
 
