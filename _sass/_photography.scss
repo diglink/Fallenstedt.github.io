@@ -114,13 +114,13 @@
       line-height: 41px;
       text-decoration: none;
       color: $white;
-      transition: all 0.5s;
+      // transition: all 0.2s;
       font-size: 18px;
       flex-grow: 2;
       span {
         position: relative;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.1s;
         right: -8px;
       }
       span:after {
@@ -130,7 +130,7 @@
         content: '»';
         font-size: 1.5em;
         opacity: 0;
-        transition: 0.5s;
+        transition: 0.4s;
       }
       &:hover {
         // border: none;
@@ -153,24 +153,17 @@
   padding: 50px;
   #social-icons {
     list-style: none;
-    text-align: center;
-    img {
+    display: flex;
+    li a img {
       max-height: 50px;
-    }
-    li {
-      display: inline;
-      padding: 40px 20px;
-      a > .twitter {
-        max-height: 40px;
+      max-width: 50px;
+      &.twitter {
+        height: 40px;
       }
-
-      @media screen and (max-width:900px) {
-
-          display: block;
-        }
     }
   }
 }
+
 
 .padding {
   padding: 0 100px;

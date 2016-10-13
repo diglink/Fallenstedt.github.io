@@ -20,13 +20,17 @@ html, body {
   background: $white !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway' !important;
+h1, h2, h3, h4, h5, h6, {
+  font-family: 'Gnuolane' !important;
   margin: 0 0 15px 0 !important;
+  line-height: 30px;
+}
+
+p {
+  font-family: 'Raleway' !important;
 }
 
 .poster {
-
   height: 100vh;
 }
 
