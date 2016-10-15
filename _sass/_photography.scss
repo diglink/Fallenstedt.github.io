@@ -149,42 +149,7 @@
   }
 }
 
-#social {
-  padding: 50px;
-  #social-icons {
-    list-style: none;
-    display: flex;
-    li a img {
-      max-height: 50px;
-      max-width: 50px;
-      &.twitter {
-        height: 40px;
-      }
-    }
-  }
-}
 
-
-.padding {
-  padding: 0 100px;
-  .info {
-    display: flex;
-    justify-content: space-between;
-    h4 {
-      flex-basis: 60%;
-      margin: 0 0 2em 0;
-    }
-    ul {
-      flex-basis: 40%;
-      // max-height: 350px;
-      columns: 2;
-      li {
-        display: flex;
-        align-items: baseline;
-      }
-    }
-  }
-}
 
 @media screen and (max-width:900px) {
   .padding {

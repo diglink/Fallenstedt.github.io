@@ -37,3 +37,25 @@ p {
 .hide-me {
   opacity: 0;
 }
+
+
+.padding {
+  padding: 0 100px;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      flex-basis: 60%;
+      margin: 0 0 2em 0;
+    }
+    ul {
+      flex-basis: 40%;
+      // max-height: 350px;
+      columns: 2;
+      li {
+        display: flex;
+        align-items: baseline;
+      }
+    }
+  }
+}
