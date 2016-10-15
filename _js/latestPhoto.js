@@ -1,5 +1,10 @@
-var Request = (function(){
-   var my500pxPhotos = function(){
+(function($, _500px, App) {
+
+  //Private
+  var _latest = {};
+
+  //logic
+  function getLatestPhotos() {
     var location = window.location.href;
     if (!(location.search("/Latest/") > -1)) {
       return;
@@ -34,7 +39,10 @@ var Request = (function(){
     });
   }
 
-  return {
-    my500pxPhotos: my500pxPhotos
+  //Public
+  App.Latest = {
+    init: function(){
+      _latest.retrieve = getLatestPhotos();
+    }
   }
-})();
+})(jQuery, window._500px = window._500px, window.App = window.App || {});
