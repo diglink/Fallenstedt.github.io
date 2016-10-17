@@ -9,14 +9,28 @@
 
 </head>
 <header>
+    {% include nav.html %}
   <!-- Banner with first image from gallery and title -->
+  <section id="portfolio-header" class="padding" style="
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),url(
+    {% if page.images[0] %}
+      '{{page.images[0]}}'
+    {% else %}
+      {{page.banner-image_path}}
+    {% endif %}
+    );
+    background-size: cover;">
+    <div class="header-container">
+      <h1 >{{page.title}}</h1>
+    </div>
+  </section>
 </header>
 <body class="animate-in">
 <!-- Carousel and Content   -->
+{% assign portfolio_images = page.images %}
 
- {% include collection-pagination.html collection="portfolios" %}
-<h1>yo</h1>
   {{content}}
+  {% include collection-pagination.html collection="portfolios" %}
 </body>
 <footer>
   {% include footer.html %}

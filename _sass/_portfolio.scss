@@ -1,0 +1,15 @@
+#portfolio-header {
+  height: 300px;
+  border: $white-border;
+
+  .header-container {
+    height: inherit;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    h1 {
+      font-size: 75px;
+      color: $white;
+    }
+  }
+}
