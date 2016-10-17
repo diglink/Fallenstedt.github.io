@@ -1,0 +1,54 @@
+{% assign this_collection = include.collection %}
+{% for c in site.[this_collection] %}
+{% if c.title == page.title %}
+  {% assign thisPost = c %}
+  {% if forloop.index == 1 %}
+    {% assign prevflag = 0 %}
+    {% assign nextflag = 1 %}
+  {% elsif forloop.index == forloop.length %}
+    {% assign prevflag = 1 %}
+    {% assign nextflag = 0 %}
+  {% else %}
+    {% assign prevflag = 1 %}
+    {% assign nextflag = 1 %}
+  {% endif %}
+{% endif %}
+{% endfor %}
+
+{% for c in site.[this_collection] %}
+  {% if c.title == page.title %}
+    {% assign prevflag = 0 %}
+  {% endif %}
+  {% if prevflag == 1 %}
+    {% assign prevPost = c %}
+    {% assign page.previous = c %}
+  {% endif %}
+{% endfor %}
+
+{% if nextflag == 1 %}
+  {% for c in site.[this_collection] %}
+    {% if foundPost == 1 %}
+      {% assign getNext = 1 %}
+    {% endif %}
+    {% if c.title == page.title %}
+      {% assign foundPost = 1 %}
+    {% endif %}
+    {% if getNext == 1%}
+      {% assign nextPost = c %}
+      {% assign page.next = c %}
+      {% assign foundPost = 0 %}
+      {% assign getNext = 0 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+<div class="collective-navigation">
+  {% if prevPost.url %}
+    <a title="{{ prevPost.title }}" href="{{ prevPost.url }}"><i class="collective-nav fa fa-angle-left" aria-hidden="true"></i>previous</a>
+  {% endif %}
+
+  {% if nextPost.url %}
+    <a title="{{ nextPost.title }}" href="{{ nextPost.url }}"><i class="collective-nav fa fa-angle-right" aria-hidden="true"></i>next</a>
+  {% endif %}
+</div>

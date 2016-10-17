@@ -1,6 +1,7 @@
 ---
 title: Cityscape
 subtitle: Photography
+layout: portfolio
 
 
 category: Photography

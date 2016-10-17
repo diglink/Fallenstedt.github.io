@@ -12,6 +12,10 @@
       margin: 20px;
       a img {
         max-height: 50px;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
       }
     }
     @media screen and (max-width:900px) {

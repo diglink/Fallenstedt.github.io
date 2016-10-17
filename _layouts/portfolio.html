@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+  {% include head.html%}
+  {% include seo.html %}
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
+  <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
-{{content}}
+</head>
+<header>
+  <!-- Banner with first image from gallery and title -->
+</header>
+<body class="animate-in">
+<!-- Carousel and Content   -->
+
+ {% include collection-pagination.html collection="portfolios" %}
+<h1>yo</h1>
+  {{content}}
+</body>
+<footer>
+  {% include footer.html %}
+</footer>
 </html>

@@ -1,7 +1,7 @@
 ---
 title: Landscape
 subtitle: Photography
-
+layout: portfolio
 
 category: Photography
 

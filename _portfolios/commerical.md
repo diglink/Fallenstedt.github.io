@@ -1,6 +1,7 @@
 ---
 title: Commercial
 subtitle: Photography
+layout: portfolio
 
 category: Photography
 

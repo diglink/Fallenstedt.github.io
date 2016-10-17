@@ -1,7 +1,7 @@
 ---
 title: Nature
 subtitle: Photography
-
+layout: portfolio
 
 category: Photography
 
