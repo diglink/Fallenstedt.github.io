@@ -7,6 +7,7 @@
       App.Index.init();
       App.Nav.init();
       App.Photography.init();
+      App.Portfolio.init();
       App.Helpers.fadeOutBeforeUnload();
     }
   }

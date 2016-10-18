@@ -33,6 +33,29 @@
   {% include collection-pagination.html collection="portfolios" %}
 </body>
 <footer>
-  {% include footer.html %}
+  <section id='social' class='padding'>
+    <ul id='social-icons'>
+      <li class = 'hide-me'>
+        <a href="http://www.github.com/{{site.github_username}}">
+          <img class='social-icon' src="../../images/icons/github.png" alt="github" />
+        </a>
+      </li>
+      <li class = 'hide-me'>
+        <a class='twitter' href="http://www.twitter.com/{{site.twitter_username}}">
+          <img class='social-icon twitter' src="../../images/icons/twitter.png" alt="twitter" />
+        </a>
+      </li>
+      <li class = 'hide-me'>
+        <a href="http://www.linkedin.com/in/{{site.linkedin_username}}">
+          <img class='social-icon' src="../../images/icons/linkedin.png" alt="linkedin" />
+        </a>
+      </li>
+      <li class = 'hide-me'>
+        <a href="http://www.500px.com/{{site.fivehundred_username}}">
+          <img class='social-icon' src="../../images/icons/500px.png" alt="500px" />
+        </a>
+      </li>
+    </ul>
+  </section>
 </footer>
 </html>

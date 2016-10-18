@@ -5,29 +5,15 @@
   var _portfolio = {};
 
   //logic
-  // function createCarousel() {
-  //   console.log('hello')
-  //   $('.slider-for').slick({
-  //    slidesToShow: 1,
-  //    slidesToScroll: 1,
-  //    arrows: false,
-  //    fade: true,
-  //    asNavFor: '.slider-nav'
-  //   });
-  //   $('.slider-nav').slick({
-  //    slidesToShow: 3,
-  //    slidesToScroll: 1,
-  //    asNavFor: '.slider-for',
-  //    dots: true,
-  //    centerMode: true,
-  //    focusOnSelect: true
-  //   });
-  // }
+  function test() {
+    console.log('yo');
+
+  }
 
   //Public
-  App.Photography = {
+  App.Portfolio = {
     init: function(){
-      // _portfolio.slider = createCarousel();
+      _portfolio.slider = test();
     }
   }
 
