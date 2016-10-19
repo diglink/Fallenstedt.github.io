@@ -6,7 +6,16 @@
 
   //logic
   function test() {
-    console.log('yo');
+    $(document).ready(function(e){
+      $("img.lazy").lazyload({
+        effect : "fadeIn",
+        skip_invisible : false,
+
+
+      });
+    });
+
+
 
   }
 

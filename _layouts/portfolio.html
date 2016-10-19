@@ -3,11 +3,11 @@
 <head>
   {% include head.html%}
   {% include seo.html %}
-  <!-- Flickity -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
-  <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
+<script src="/js/portfolio.js"></script>
+<script src="/js/libraries/jquery.lazyload.min.js" type="text/javascript"></script>
 </head>
+
 <header>
     {% include nav.html %}
   <!-- Banner with first image from gallery and title -->
@@ -27,7 +27,18 @@
 </header>
 <body class="animate-in">
 <!-- Carousel and Content   -->
-{% assign portfolio_images = page.images %}
+<section id="portfolio-piece" class="padding">
+  {% assign portfolio_images = page.images %}
+  <ul>
+  {% for image in portfolio_images %}
+    <li>
+      <img class="lazy" data-original="{{ image | prepend: site.baseurl }}"  alt="" />
+    </li>
+  {% endfor %}
+</ul>
+  <div class="carousel"></di>
+
+</section>
 
   {{content}}
   {% include collection-pagination.html collection="portfolios" %}
@@ -58,4 +69,9 @@
     </ul>
   </section>
 </footer>
+<script type="text/javascript">
+$(function() {
+
+});
+</script>
 </html>
