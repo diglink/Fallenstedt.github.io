@@ -43,12 +43,12 @@
 {% endif %}
 
 
-<div class="collective-navigation">
+<div class='collection-nav-container'>
   {% if prevPost.url %}
-    <a title="{{ prevPost.title }}" href="{{ prevPost.url }}"><i class="collective-nav fa fa-angle-left" aria-hidden="true"></i>previous</a>
+    <a title="{{ prevPost.title }}" href="{{ prevPost.url }}"><i class="collective-nav fa fa-angle-left" aria-hidden="true"></i>{{prevPost.title}}</a>
   {% endif %}
 
   {% if nextPost.url %}
-    <a title="{{ nextPost.title }}" href="{{ nextPost.url }}"><i class="collective-nav fa fa-angle-right" aria-hidden="true"></i>next</a>
+    <a title="{{ nextPost.title }}" href="{{ nextPost.url }}"><i class="collective-nav fa fa-angle-right" aria-hidden="true"></i>{{nextPost.title}}</a>
   {% endif %}
 </div>

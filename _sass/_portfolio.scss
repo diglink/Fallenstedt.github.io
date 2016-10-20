@@ -30,3 +30,25 @@
     }
   }
 }
+
+
+#portfolio-navigation {
+  div {
+    border: 1px solid green;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      align-self: center;
+      border: 1px solid red;
+      background: salmon;
+      height: inherit;
+      width: 50%;
+    }
+    a:nth-child(2) {
+      border: 1px solid blue;
+      background: lightblue;
+    }
+  }
+}
