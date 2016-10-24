@@ -53,13 +53,25 @@
     });
   }
 
-  function showScrollToTop(scroll_pos) {
-    // var scrollTopButton = document.getElementById('scroll-to-top');
+  function scrollToTop() {
+      $('#scroll-to-top').on("click", function(e) {
+        e.preventDefault();
+        window.scrollY = 0;
+      })
+  }
 
+  function showScrollToTop(scroll_pos) {
     if (  scroll_pos > 900) {
       $('#scroll-to-top').fadeIn();
-
+    } else {
+      $('#scroll-to-top').fadeOut();
     }
+
+    $('#scroll-to-top').on("click", function(e) {
+      $('html, body').animatescrollTop(0);
+      return false;
+    });
+
   }
 
   function recordScrollPosition() {
@@ -79,8 +91,8 @@
   //Public
   App.Portfolio = {
     init: function(){
-      _portfolio.slider = lazyLoadImages();
-      _portfolio.scrollToTop = recordScrollPosition();
+      _portfolio.lazyLoad = lazyLoadImages();
+      _portfolio.recordScrollPosition = recordScrollPosition();
     }
   }
 
