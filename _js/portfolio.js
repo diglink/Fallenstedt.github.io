@@ -4,6 +4,10 @@
   //Private
   var _portfolio = {};
 
+  //scroll to top variables
+  var LAST_KNOWN_SCROLL_POSITION = 0;
+  var TICKING = false;
+
   //logic
   function lazyLoadImages() {
     $(document).ready(function(e){
@@ -49,10 +53,34 @@
     });
   }
 
+  function showScrollToTop(scroll_pos) {
+    // var scrollTopButton = document.getElementById('scroll-to-top');
+
+    if (  scroll_pos > 900) {
+      $('#scroll-to-top').fadeIn();
+
+    }
+  }
+
+  function recordScrollPosition() {
+    window.addEventListener('scroll', function(e) {
+      LAST_KNOWN_SCROLL_POSITION = window.scrollY;
+
+      if(!TICKING) {
+        window.requestAnimationFrame(function() {
+          showScrollToTop(LAST_KNOWN_SCROLL_POSITION)
+          TICKING = false;
+        });
+      }
+      TICKING = true;
+    })
+  }
+
   //Public
   App.Portfolio = {
     init: function(){
       _portfolio.slider = lazyLoadImages();
+      _portfolio.scrollToTop = recordScrollPosition();
     }
   }
 

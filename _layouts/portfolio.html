@@ -28,6 +28,7 @@
 <body class="animate-in">
   <!-- Carousel and Content   -->
   <section id="portfolio-piece" class="padding">
+    {% include scroll-to-top.html %}
     {% assign portfolio_images = page.images %}
     <ul>
       {% for image in portfolio_images %}
