@@ -53,13 +53,6 @@
     });
   }
 
-  function scrollToTop() {
-      $('#scroll-to-top').on("click", function(e) {
-        e.preventDefault();
-        window.scrollY = 0;
-      })
-  }
-
   function showScrollToTop(scroll_pos) {
     if (  scroll_pos > 900) {
       $('#scroll-to-top').fadeIn();
@@ -68,7 +61,7 @@
     }
 
     $('#scroll-to-top').on("click", function(e) {
-      $('html, body').animatescrollTop(0);
+      $('html, body').scrollTop(0);
       return false;
     });
 
