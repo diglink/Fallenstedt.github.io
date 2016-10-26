@@ -26,20 +26,32 @@
     text-align: center;
     height: 100vh;
     &:hover {
-      //expand image
-      //make linear gradient darker
+      
+      h1 {
+        padding-bottom: 20px;
+
+      }
+    }
+    h1 {
+      transition: all 0.5s;
     }
 
   }
   .align-item:nth-child(1){
-    background:
-      linear-gradient(
-      rgba(255, 0, 0, 0.45),
-      rgba(255, 0, 0, 0.45)
+    background:   linear-gradient(
+      rgba(0, 30, 30, 0.45),
+      rgba(0, 30, 30, 0.45)
       ),
-      url('http://placekitten.com/200/300');
-
-    width: 100%;
+      url('../images/cityscape/cityscape-8.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      height: 100vh;
   }
 }
 
