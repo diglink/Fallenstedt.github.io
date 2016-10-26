@@ -3,8 +3,7 @@ navorder: 3
 title: Code
 layout: standard
 custom_css:
-custom_js:
-  - nav
+
 ---
 <head>
   {% include head.html %}
@@ -15,30 +14,18 @@ custom_js:
     {% endfor %}
   {% endif %}
 
-  {% if page.custom_js %}
-    {% for js_file in page.custom_js %}
-      <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
-    {% endfor %}
-  {% endif %}
-<!-- I work with clients of all scopes and sectors to create better experiences through design. My ideas are not industry specific. I always apply the same level of detail and quality to each project with quality and scalability in mind. -->
 </head>
 <header>
   {% include nav.html %}
 </header>
 <body class='animate-in'>
-  <div id="photographer-poster" class="poster">
-    <div class="">
-      <h1>A fancy title</h1>
-      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</h5>
+  <section id="code-poster" class="poster">
+    <div class="padding">
+      <h1>Under Construction</h1>
+      <h1>Sorry about that.</h1>
+      <p>I promise this section will be great. Why not check out my <a href="http://www.github.com/{{site.github_username}}">Github</a> or my <a href="/photography">Photography</a> while you're here.</p>
     </div>
-  </div>
-  <div class="section">
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-  </div>
+  </section>
 </body>
 <footer>
   {% include footer.html %}
