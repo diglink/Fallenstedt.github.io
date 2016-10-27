@@ -45,13 +45,26 @@
 
 <div class='collection-nav-container'>
   {% if prevPost.url %}
-    <a style="background-image: url({{prevPost.images[0] }});" title="{{ prevPost.title }}" href="{{ prevPost.url }}"><i class="collective-nav" aria-hidden="true"></i>{{prevPost.title}}</a>
+  <div style="background-image: url({{prevPost.images[0] }});" class="">
+    <a title="{{ prevPost.title }}" href="{{ prevPost.url }}"><i class="collective-nav" aria-hidden="true"></i>
+      <h1>
+        {{prevPost.title}}
+      </h1>
+    </a>
+  </div>
   {% else if %}
+
     <a  title="Contact" href="#"><i class="collective-nav" aria-hidden="true"></i>Contact</a>
   {% endif %}
 
   {% if nextPost.url %}
-    <a style="background-image: url({{nextPost.images[0] }});" title="{{ nextPost.title }}" href="{{ nextPost.url }}"><i class="collective-nav" aria-hidden="true"></i>{{nextPost.title}}</a>
+  <div style="background-image: url({{nextPost.images[0] }});"class="">
+    <a title="{{ nextPost.title }}" href="{{ nextPost.url }}"><i class="collective-nav" aria-hidden="true"></i>
+      <h1>
+        {{nextPost.title}}
+      </h1>
+    </a>
+  </div>
   {% else if %}
     <a  title="Contact" href="#"><i class="collective-nav" aria-hidden="true"></i>Contact</a>
   {% endif %}
