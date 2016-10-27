@@ -61,7 +61,7 @@
     }
 
     $('#scroll-to-top').on("click", function(e) {
-      $('html').scrollTop(0);
+      window.scrollTo(0,0);
       return false;
     });
 
