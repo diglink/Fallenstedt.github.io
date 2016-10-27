@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Recent
 subtitle: Photography
 layout: portfolio
@@ -15,4 +15,4 @@ images:
 ---
 
 
-I've had the pleasure of working with numerous clients, both large and small, to craft a unique visual experience for their products or services. I've enjoyed this work since it  is always a unique challenge to show the best side of something.
+I've had the pleasure of working with numerous clients, both large and small, to craft a unique visual experience for their products or services. I've enjoyed this work since it  is always a unique challenge to show the best side of something. -->
