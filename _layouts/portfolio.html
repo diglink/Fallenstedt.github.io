@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  {% if page.custom_js %}
+  {% assign sources = page.custom_js %}
+  {% for source in sources %}
+  <script src="{{source}}"></script>
+  {% endfor %}
+  {% endif %}
+  
   {% include head.html%}
   {% include seo.html %}
 

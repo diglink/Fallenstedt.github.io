@@ -1,5 +1,5 @@
 
-(function($, App){
+(function($, _500px, App){
 
   //Private
   var _portfolio = {};
@@ -20,7 +20,7 @@
 
   function getLatestPhotos() {
     var location = window.location.href;
-    if (!(location.search("/Latest/") > -1)) {
+    if (!(location.search("/recent/") > -1)) {
       return;
       //do not make an API call
     }
@@ -86,7 +86,8 @@
     init: function(){
       _portfolio.lazyLoad = lazyLoadImages();
       _portfolio.recordScrollPosition = recordScrollPosition();
+      _portfolio.request500pxPhotos = getLatestPhotos();
     }
   }
 
-})(jQuery, window.App = window.App || {});
+})(jQuery, _500px = window._500px, window.App = window.App || {});
