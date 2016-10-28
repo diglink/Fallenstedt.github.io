@@ -20,6 +20,7 @@
 
   function getLatestPhotos() {
     var location = window.location.href;
+    var container = $('#portfolio-piece');
     if (!(location.search("/recent/") > -1)) {
       return;
       //do not make an API call
@@ -46,7 +47,7 @@
           alert('Nothing found! Please refresh...');
         } else {
           $.each(response.data.photos, function() {
-            $latest.append('<div class="item"><a href="' + siteurl + this.id + '" target="_blank"><img class="image" src="' + this.image_url + '"></a></div>');
+            container.append('<div class="item"><a href="' + siteurl + this.id + '" target="_blank"><img class="image" src="' + this.image_url + '"></a></div>');
           });
         }
       });
