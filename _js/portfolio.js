@@ -20,7 +20,7 @@
 
   function getLatestPhotos() {
     var location = window.location.href;
-    var container = $('#portfolio-piece');
+    var container = $('#images-ul');
     if (!(location.search("/recent/") > -1)) {
       return;
       //do not make an API call
@@ -47,7 +47,8 @@
           alert('Nothing found! Please refresh...');
         } else {
           $.each(response.data.photos, function() {
-            container.append('<div class="item"><a href="' + siteurl + this.id + '" target="_blank"><img class="image" src="' + this.image_url + '"></a></div>');
+                // <img class="lazy" data-original="{{ image | prepend: site.baseurl }}"  alt="" />
+            container.append('<li><a href="' + siteurl + this.id + '" target="_blank"><img class="lazy" src="' + this.image_url + '"></a></li>');
           });
         }
       });
