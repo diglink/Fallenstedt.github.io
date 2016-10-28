@@ -7,6 +7,7 @@
   //scroll to top variables
   var LAST_KNOWN_SCROLL_POSITION = 0;
   var TICKING = false;
+  var IMG_CONTAINER = $('#images-ul');
 
   //logic
   function lazyLoadImages() {
@@ -18,13 +19,15 @@
     });
   }
 
-  function getLatestPhotos() {
+
+
+  function getLatestPhotos(callback) {
     var location = window.location.href;
-    var container = $('#images-ul');
     if (!(location.search("/recent/") > -1)) {
       return;
       //do not make an API call
     }
+    callback();
     console.log('request500pxPhotos');
     _500px.init({
       sdk_key: 'c0ab32b508c22f83d18aa292db5497cecda5aa40'   //replace with your 500px js sdk key
@@ -47,12 +50,12 @@
           alert('Nothing found! Please refresh...');
         } else {
           $.each(response.data.photos, function() {
-                // <img class="lazy" data-original="{{ image | prepend: site.baseurl }}"  alt="" />
-            container.append('<li><a href="' + siteurl + this.id + '" target="_blank"><img class="lazy" src="' + this.image_url + '"></a></li>');
+            $('#images-ul').append('<li><a href="' + siteurl + this.id + '" target="_blank"><img class="lazy" src="' + this.image_url + '"></a></li>');
           });
         }
       });
     });
+
   }
 
   function showScrollToTop(scroll_pos) {
@@ -68,6 +71,13 @@
     });
 
   }
+
+  function removeFirstImage() {
+    var firstChild = $('#images-ul').children()
+    if (firstChild.length > 0) {
+      firstChild.remove();
+    }
+  };
 
   function recordScrollPosition() {
     window.addEventListener('scroll', function(e) {
@@ -88,7 +98,7 @@
     init: function(){
       _portfolio.lazyLoad = lazyLoadImages();
       _portfolio.recordScrollPosition = recordScrollPosition();
-      _portfolio.request500pxPhotos = getLatestPhotos();
+      _portfolio.request500pxPhotos = getLatestPhotos(removeFirstImage);
     }
   }
 
