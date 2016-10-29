@@ -2,33 +2,48 @@
 navorder: 4
 title: About
 layout: standard
+images:
+- /images/nature/nature-9.jpg
 custom_css:
 custom_js:
-  - nav
+- nav
 ---
 <head>
   {% include head.html %}
   <!--page specific assets-->
   {% if page.custom_css %}
-    {% for stylesheet in page.custom_css %}
-      <link rel="stylesheet" href="/css/{{ stylesheet }}" media="screen" type="text/css">
-    {% endfor %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="/css/{{ stylesheet }}" media="screen" type="text/css">
+  {% endfor %}
   {% endif %}
 
   {% if page.custom_js %}
-    {% for js_file in page.custom_js %}
-      <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
-    {% endfor %}
+  {% for js_file in page.custom_js %}
+  <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
+  {% endfor %}
   {% endif %}
 
 </head>
 <header>
   {% include nav.html %}
+  <section id="portfolio-header" class="padding" style="
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),url(
+  {% if page.images[0] %}
+  '{{page.images[0]}}'
+  {% else %}
+  {{page.banner-image_path}}
+  {% endif %}
+  );
+  background-size: cover;">
+  <div class="header-container">
+    <h1 >{{page.title}}</h1>
+  </div>
+</section>
 </header>
 <body class='animate-in'>
-<section class="section">
-  {% include timeline.html %}
-</section>
+  <section class="section">
+    {% include timeline.html %}
+  </section>
 </body>
 <footer>
   {% include footer.html %}
