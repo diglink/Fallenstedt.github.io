@@ -7,6 +7,8 @@ category: Photography
 
 custom_js:
   - /js/libraries/500px.js
+  
+loading_gif: true
 
 images:
   - /images/landscape/landscape-12.jpg

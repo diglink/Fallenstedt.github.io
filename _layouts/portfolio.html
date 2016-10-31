@@ -37,6 +37,9 @@
   <section id="portfolio-piece" class="padding">
     {% include scroll-to-top.html %}
     {% assign portfolio_images = page.images %}
+    {% if page.loading_gif %}
+    <h1>yo></h1>
+    {% endif %}
     <ul id='images-ul'>
       {% for image in portfolio_images %}
       <li>
