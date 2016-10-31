@@ -5,38 +5,36 @@ layout: portfolio
 
 category: Photography
 
-cta:
-  btnText: View Services
-  btnType: btn-warning
-  btnLink: /about/
-
-
 images:
+- /images/commercial/commercial-5.jpg
+- /images/commercial/commercial-2.jpg
+- /images/commercial/commercial-3.jpg
+- /images/commercial/commercial-4.jpg
+- /images/commercial/commercial-1.jpg
+- /images/commercial/commercial-6.jpg
+- /images/commercial/commercial-7.jpg
 - /images/commercial/commercial-8.jpg
-- /images/commercial/weddings -5.jpg
-- /images/commercial/weddings -1.jpg
-- /images/commercial/weddings -3.jpg
-- /images/commercial/weddings -4.jpg
-- /images/commercial/weddings -6.jpg
-- /images/commercial/weddings -7.jpg
-- /images/commercial/weddings -9.jpg
-- /images/commercial/weddings -11.jpg
-- /images/commercial/weddings -12.jpg
-- /images/commercial/weddings -13.jpg
-- /images/commercial/weddings -14.jpg
-- /images/commercial/weddings -15.jpg
-- /images/commercial/weddings -16.jpg
-- /images/commercial/weddings -17.jpg
-- /images/commercial/weddings -18.jpg
-- /images/commercial/weddings -19.jpg
-- /images/commercial/weddings -20.jpg
-- /images/commercial/weddings -21.jpg
-- /images/commercial/weddings -22.jpg
-- /images/commercial/weddings -23.jpg
-- /images/commercial/weddings -24.jpg
-
+- /images/commercial/commercial-9.jpg
+- /images/commercial/commercial-10.jpg
+- /images/commercial/commercial-11.jpg
+- /images/commercial/commercial-12.jpg
+- /images/commercial/commercial-13.jpg
+- /images/commercial/commercial-14.jpg
+- /images/commercial/commercial-15.jpg
+- /images/commercial/commercial-16.jpg
+- /images/commercial/commercial-17.jpg
+- /images/commercial/commercial-18.jpg
+- /images/commercial/commercial-19.jpg
+- /images/commercial/commercial-20.jpg
+- /images/commercial/commercial-21.jpg
+- /images/commercial/commercial-22.jpg
+- /images/commercial/commercial-23.jpg
+- /images/commercial/commercial-24.jpg
+- /images/commercial/commercial-25.jpg
+- /images/commercial/commercial-26.jpg
+- /images/commercial/commercial-27.jpg
+- /images/commercial/commercial-28.jpg
 
 ---
 
-
-I've had the pleasure of working with numerous clients, both large and small, to craft a unique visual experience for their products or services. I've enjoyed this work since it  is always a unique challenge to show the best side of something.
+The power of cities is that each have their own and creative and cultural energy. Photographing them is a window onto everything that's happening in that world.

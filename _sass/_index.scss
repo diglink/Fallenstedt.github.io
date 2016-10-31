@@ -15,7 +15,7 @@
       rgba(49, 22, 21, 0.45),
       rgba(49, 22, 21, 0.45)
       ),
-      url('../images/landscape/landscape-9.jpg');
+      url('../images/landscape/landscape-21.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,6 +26,7 @@
     text-align: center;
     height: 100vh;
     &:hover {
+      cursor: pointer;
 
       h1 {
         padding-bottom: 20px;
@@ -45,7 +46,7 @@
       rgba(49, 22, 21, 0.45),
       rgba(49, 22, 21, 0.45)
       ),
-      url('../images/landscape/landscape-4.jpg');
+      url('../images/city/city-4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

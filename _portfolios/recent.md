@@ -9,7 +9,7 @@ custom_js:
   - /js/libraries/500px.js
 
 images:
-  - /images/nature/nature-4.jpg
+  - /images/landscape/landscape-12.jpg
 
 
 
