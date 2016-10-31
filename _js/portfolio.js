@@ -49,6 +49,7 @@
         if (response.data.photos.length == 0) {
           alert('Nothing found! Please refresh...');
         } else {
+          $('#loading-gif').fadeOut();
           $.each(response.data.photos, function() {
             $('#images-ul').append('<li><a href="' + siteurl + this.id + '" target="_blank"><img class="lazy" src="' + this.image_url + '"></a></li>');
           });
