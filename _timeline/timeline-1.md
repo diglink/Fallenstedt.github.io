@@ -1,6 +1,6 @@
 ---
-title: '2009-2010'
-subtitle:  'A New Beginning'
-img_path: '/images/timeline/yellow200x200.png'
+title: 'Sticky Co'
+subtitle:  'Current'
+img_path: '/images/timeline/sticky.jpeg'
 ---
-The timeline serves as a great section to list out your accomplishments. It provides a bit of history as to who you are.
+Utilized HTML, CSS, JavaScript, JQuery, PHP & MySQL and APIs to assist in building a permanent interactive exhibit at the Oregon Historical Society. Videographer, and photographer

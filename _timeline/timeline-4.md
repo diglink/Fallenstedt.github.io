@@ -1,7 +1,7 @@
 ---
-title: '2014-2016'
-subtitle:  'And Today I...'
+title: 'Videographer / Outreach Specialist'
+subtitle:  '2012 - 2014'
 img_path: '/images/timeline/purple200x200.png'
 ---
 
-Start your next website with Agency theme and make it your own! Every section is well documented so you won't be left confused
+Worked closely with student body through educational media, workshops, and social media to promote recycling, composting, and sustainability. Assisted in increasing waste diversion rate from 48% to 51%.

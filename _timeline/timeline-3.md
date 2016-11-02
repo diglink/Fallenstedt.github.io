@@ -1,6 +1,6 @@
 ---
-title: '2012-2014'
-subtitle:  'Another Interesting Adventure'
+title: 'Bowtie'
+subtitle:  '2016'
 img_path: '/images/timeline/yellow200x200.png'
 ---
-You can also use it to list out facts about yourself. It doesn't have to be used as a timeline. This section can be anything you want
+Wire framed, sketched, and built 2 website templates that are compatible with BowTie.io's React collection editor

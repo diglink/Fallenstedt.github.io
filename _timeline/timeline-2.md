@@ -1,7 +1,7 @@
 ---
-title: '2010-2012'
-subtitle:  'An Interesting Adventure'
+title: 'Professional Photographer'
+subtitle:  '2014-Current'
 img_path: '/images/timeline/purple200x200.png'
 ---
 
-You can add as many of these sections as you like, and it will alternate by itself. Pretty neat!
+Photographed people, products, and places for over 15 issues at Dope Magazine. Focus on Wedding and Commercial photography. 
