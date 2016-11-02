@@ -1,0 +1,12 @@
+#about-intro {
+  margin-bottom: 80px;
+  .aboutBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 40px 0;
+    }
+  }
+}
