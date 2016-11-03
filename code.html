@@ -3,7 +3,6 @@ navorder: 3
 title: Code
 layout: standard
 custom_css:
-
 ---
 <head>
   {% include head.html %}
@@ -19,12 +18,28 @@ custom_css:
   {% include nav.html %}
 </header>
 <body class='animate-in'>
-  <section id="code-poster" class="poster">
+  <section id="photographer-poster" class="poster">
     <div class="padding">
-      <h1>Under Construction</h1>
-      <h1>Sorry about that.</h1>
-      <p>I promise this section will be great. Why not check out my <a style="color: orange;" href="http://www.github.com/{{site.github_username}}">Github</a> or my <a style="color: orange;" href="/photography">Photography</a> while you're here.</p>
+      <h1>Great Photos,</h1>
+      <h1>Unforgettable Memories</h1>
+      <p>As a photographer, I know that the perfect photo should tell a story and preserve a memory. I work with my clients and bridge the divide between ideas and reality. In short, I create powerful and memorable photos.</p>
     </div>
+  </section>
+  <section id="photographer-gallery" class="padding">
+      <h1>Gallery</h1>
+      <!-- <img src="/images/commercial/commercial-" alt="" /> -->
+      <ul class="list-unstyled portfolio">
+          {% assign portfolios = site.portfolios %}
+          {% for portfolio in portfolios %}
+          <li class="portfolio-item hide-me" style="background-image: url({{portfolio.images[0]}})">
+            <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
+                <div>
+                  <h3>{{ portfolio.title }}</h3>
+                </div>
+            </a>
+          </li>
+          {% endfor %}
+      </ul>
   </section>
 </body>
 <footer>
