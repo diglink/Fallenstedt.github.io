@@ -1,12 +1,12 @@
 ---
-title: Landscape
+title: Nature
 subtitle: Photography
 layout: portfolio
 
 category: Photography
 
 images:
-- /images/landscape/landscape-5.jpg
+- /images/landscape/landscape-22.jpg
 - /images/landscape/landscape-2.jpg
 - /images/landscape/landscape-3.jpg
 - /images/landscape/landscape-4.jpg
@@ -14,6 +14,7 @@ images:
 - /images/landscape/landscape-6.jpg
 - /images/landscape/landscape-7.jpg
 - /images/landscape/landscape-8.jpg
+- /images/landscape/landscape-5.jpg
 - /images/landscape/landscape-9.jpg
 - /images/landscape/landscape-10.jpg
 - /images/landscape/landscape-11.jpg
@@ -27,7 +28,6 @@ images:
 - /images/landscape/landscape-19.jpg
 - /images/landscape/landscape-20.jpg
 - /images/landscape/landscape-21.jpg
-- /images/landscape/landscape-22.jpg
 - /images/landscape/landscape-23.jpg
 - /images/landscape/landscape-24.jpg
 - /images/landscape/landscape-25.jpg
