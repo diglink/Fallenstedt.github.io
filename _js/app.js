@@ -18,7 +18,6 @@
 
     container = document.getElementById( 'canvas' );
     document.body.appendChild( container );
-
     renderer = new THREE.WebGLRenderer( { alpha: true } );
     renderer.setSize( CANVAS_WIDTH, CANVAS_HEIGHT );
     container.appendChild( renderer.domElement );
