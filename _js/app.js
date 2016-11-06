@@ -2,7 +2,9 @@
   //Private
   var _app = {};
   TEXT_SHOWN = false;
-  INTERVAL = 120
+  INTERVAL = 120;
+  MESSAGE = "Responsive Web Design";
+  MESSAGE2 = "HTML • CSS • JavaScript • PHP • MySQL";
 
     function showText(target, message, index, interval) {
       if (index < message.length) {
@@ -11,7 +13,7 @@
       } else {
         if (!TEXT_SHOWN) {
           target = document.getElementById('show-text-2');
-          message = "HTML • CSS • JavaScript • PHP • MySQL";
+          message = "I promise this section will be great. You can browse my github or other social links below :)";
           index = 0
           setTimeout(function(){showText(target, message, index, INTERVAL);}, 400);
         }
@@ -22,7 +24,7 @@
     function findTargetToShowText() {
       if (document.getElementById('show-text')) {
         var target = document.getElementById('show-text');
-        var message = "Responsive Web Design";
+        var message = "Under Construction... Sorry About That";
         setTimeout(function(){showText(target, message, 0, INTERVAL)}, 400);
 
       }
