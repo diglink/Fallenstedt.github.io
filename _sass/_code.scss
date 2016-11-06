@@ -3,7 +3,11 @@
   background:   linear-gradient(
     rgba(0, 30, 30, 0.45),
     rgba(0, 30, 30, 0.45)
-    );
+    ),
+    url('../images/city/city-6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #canvas {

@@ -43,5 +43,9 @@ collections:
     portfolios_dir: _portfolios
     output: true
     permalink: /:collection/:title/
+  code:
+    code_dir: _code
+    output: true
+    permalink: /:collection/:title/
 gems:
   - jekyll-livereload
