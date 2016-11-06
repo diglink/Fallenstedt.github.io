@@ -38,13 +38,17 @@
             var top_of_window = bottom_of_window - $(window).height();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             bottom_of_element -= 200;
-            
+
             if (bottom_of_window > bottom_of_element) {
               $(this).animate({'opacity' : 1}, 500);
             }
           });
         })
       }
+    },
+    reverse: function(s) {
+      for (var i = s.length - 1, o = ''; i >= 0; o += s[i--]) { }
+      return o;
     }
   }
 
