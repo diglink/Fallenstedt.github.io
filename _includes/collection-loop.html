@@ -1,0 +1,15 @@
+{% if include.title%}{% assign title = include.title %}{% endif %}
+{% if include.collection %}{% assign projects = include.collection  %}{% endif %}
+<h1>{{ title }}</h1>
+<!-- <img src="/images/commercial/commercial-" alt="" /> -->
+<ul class="list-unstyled portfolio">
+  {% for project in projects %}
+  <li class="portfolio-item hide-me" style="background-image: url({{project.images[0]}})">
+    <a class="overlay" href="{{ project.url | prepend: site.baseurl }}">
+      <div>
+        <h3>{{ project.title }}</h3>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -26,20 +26,8 @@ custom_css:
     </div>
   </section>
   <section id="photographer-gallery" class="padding">
-      <h1>Gallery</h1>
-      <!-- <img src="/images/commercial/commercial-" alt="" /> -->
-      <ul class="list-unstyled portfolio">
-          {% assign portfolios = site.portfolios %}
-          {% for portfolio in portfolios %}
-          <li class="portfolio-item hide-me" style="background-image: url({{portfolio.images[0]}})">
-            <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
-                <div>
-                  <h3>{{ portfolio.title }}</h3>
-                </div>
-            </a>
-          </li>
-          {% endfor %}
-      </ul>
+    {% assign projects = site.portfolios %}
+    {% include collection-loop.html title = 'Gallery' projects = projects %}
   </section>
   <!-- <section id="call-to-action"class="padding">
       <div class="cta">

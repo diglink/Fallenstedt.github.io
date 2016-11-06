@@ -43,8 +43,8 @@ collections:
     portfolios_dir: _portfolios
     output: true
     permalink: /:collection/:title/
-  code:
-    code_dir: _code
+  codes:
+    codes_dir: _code
     output: true
     permalink: /:collection/:title/
 gems:

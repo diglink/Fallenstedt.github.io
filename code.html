@@ -8,9 +8,9 @@ custom_css:
   {% include head.html %}
   <!--page specific assets-->
   {% if page.custom_css %}
-    {% for stylesheet in page.custom_css %}
-      <link rel="stylesheet" href="/css/{{ stylesheet }}" media="screen" type="text/css">
-    {% endfor %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="/css/{{ stylesheet }}" media="screen" type="text/css">
+  {% endfor %}
   {% endif %}
 
 </head>
@@ -24,24 +24,12 @@ custom_css:
     <div class="padding">
       <h1 id='show-text'></h1>
       <p id='show-text-2'></p>
-      <!-- <p>You can visit my <a href="https://www.github.com/{{site.github_username}}" target="_blank">Github</a> though.</p> -->
     </div>
   </section>
-  <!-- <section id="photographer-gallery" class="padding">
-      <h1>Gallery</h1>
-      <ul class="list-unstyled portfolio">
-          {% assign portfolios = site.portfolios %}
-          {% for portfolio in portfolios %}
-          <li class="portfolio-item hide-me" style="background-image: url({{portfolio.images[0]}})">
-            <a class="overlay" href="{{ portfolio.url | prepend: site.baseurl }}">
-                <div>
-                  <h3>{{ portfolio.title }}</h3>
-                </div>
-            </a>
-          </li>
-          {% endfor %}
-      </ul>
-  </section> -->
+  <section id="photographer-gallery" class="padding">
+    {% assign projects = site.codes %}
+    {% include collection-loop.html title = 'Selected Projects' projects = projects %}
+  </section>
 </body>
 <footer>
   {% include footer.html %}
