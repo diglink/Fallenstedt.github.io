@@ -67,8 +67,9 @@
     }
 
     $('#scroll-to-top').on("click", function(e) {
-      window.scrollTo(0,0);
-      return false;
+      $('html, body').animate({
+        scrollTop: 0,
+      }, 500)
     });
 
   }
