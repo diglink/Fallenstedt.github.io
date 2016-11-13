@@ -19,13 +19,17 @@
   {% include nav.html %}
   <!-- Banner with first image from gallery and title -->
   <section id="portfolio-header" class="padding" style="
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),url(
-  {% if page.images[0] %}
-  '{{page.images[0]}}'
-  {% else %}
-  {{page.banner-image_path}}
-  {% endif %}
+  {% if page.category == 'Photography' %}
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(
+    {% if page.images[0] %}
+    '{{page.images[0]}}'
+    {% endif %}
   );
+  {% elsif page.category == 'Code' %}
+    {% if page.bg_color %}
+      background-color: {{page.bg_color}}
+    {% endif %}
+  {% endif %}
   background-size: cover;">
   <div class="header-container padding">
     <h1 >{{page.title}}</h1>
@@ -37,18 +41,20 @@
   <section id="portfolio-piece" class="padding">
     {% include scroll-to-top.html %}
     {% assign portfolio_images = page.images %}
-      {% if page.loading_gif %}
-      <div id="loading-gif">
-        {% include widgets/loading.html %}
-      </div>
-      {% endif %}
+    {% if page.loading_gif %}
+    <div id="loading-gif">
+      {% include widgets/loading.html %}
+    </div>
+    {% endif %}
+    {% if page.category == 'Photography' %}
     <ul id='images-ul'>
       {% for image in portfolio_images %}
       <li>
-        <img class="lazy" data-original="{{ image | prepend: site.baseurl }}"  alt="" />
+        <img class="lazy" src="{{ image | prepend: site.baseurl }}"  alt="" />
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
     {{content}}
   </section>
   <section id="portfolio-navigation">
