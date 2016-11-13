@@ -1,14 +1,21 @@
+@import './include_media';
+
 #portfolio-header {
   height: 300px;
   border: $white-border;
 
   .header-container {
-    height: calc(100% /2);
-    width: 100%;
+    @include media(">=tablet") {
+      height: 150px;
+      width: 100%;
+      justify-content: center;
+    }
+    height: calc(100%);
+    width: 100vw;
+    padding: 0 !important;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
     h1 {
       font-size: 75px;
       color: $white;
