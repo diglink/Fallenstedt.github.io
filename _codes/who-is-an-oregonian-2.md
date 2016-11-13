@@ -20,9 +20,9 @@ Building a User Friendly Touchscreen Exhibit
 
 While employed by [Sticky Co](http://sticky.tv/), I had the opportunity to assist in building an interactive part of [History Hub](http://www.ohs.org/museum/exhibits/history-hub.cfm), an Oregon Historical Society permanent exhibit.
 
-
-![image](../../images/history_hub/input.gif){: .center-img }
-
+<div class="center-img">
+<img src="../../images/history_hub/input.gif" alt="" />
+</div>
 
 My focus on this project was data collection. The interactive exhibit needed to record a user's responses to where they currently live, where they were born, and origins of their ancestors. I was approached to provide a solution that would easiest for a user of all ages with the requirement that the app function with no keyboard. After researching various methods of input, our team decided on using Google Maps JavaScript API. As a user would add markers to the map, each marker would reverse geocode its coordinates. This information was displayed to a user for confirmation and later saved on their approval into a MySQL database.
 
