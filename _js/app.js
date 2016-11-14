@@ -2,7 +2,7 @@
   //Private
   var _app = {};
   TEXT_SHOWN = false;
-  INTERVAL = 120;
+  INTERVAL = 80;
   MESSAGE = "Responsive Web Design";
   MESSAGE2 = "HTML • CSS • JavaScript • PHP • MySQL";
 
@@ -15,7 +15,7 @@
           target = document.getElementById('show-text-2');
           message = "I promise this section will be great. You can browse my github or other social links below :)";
           index = 0
-          setTimeout(function(){showText(target, message, index, INTERVAL);}, 400);
+          setTimeout(function(){showText(target, message, index, INTERVAL);}, 200);
         }
         TEXT_SHOWN = true;
       }
