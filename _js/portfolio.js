@@ -65,13 +65,13 @@
     } else {
       $('#scroll-to-top').fadeOut();
     }
-
+  }
+  function handleScrollToTop() {
     $('#scroll-to-top').on("click", function(e) {
       $('html, body').animate({
         scrollTop: 0,
       }, 500)
     });
-
   }
 
   function removeFirstImage() {
@@ -101,6 +101,7 @@
       _portfolio.lazyLoad = lazyLoadImages();
       _portfolio.recordScrollPosition = recordScrollPosition();
       _portfolio.request500pxPhotos = getLatestPhotos(removeFirstImage);
+      _portfolio.handleScrollToTop = handleScrollToTop();
     }
   }
 

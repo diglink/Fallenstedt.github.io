@@ -1,4 +1,10 @@
+@import './include_media';
+
 #scroll-to-top {
+  @include media(">=tablet") {
+    top: 85% !important;
+    right: 5% !important;
+  }
   display: none;
   opacity: 0.5;
   color: $blue;
@@ -9,6 +15,10 @@
   transition: all 0.5s;
   &:hover {
     cursor: pointer;
-    top: 89%;
+    transform: scale(1.2, 1.2);
+  }
+  &:active {
+    cursor: pointer;
+    transform: scale(0.9, 0.9);
   }
 }
